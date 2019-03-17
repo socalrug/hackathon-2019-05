@@ -2,13 +2,15 @@
 
 # Saturday
 
-9:00 AM – 10:00 AM: Tutorial - Data manipulation with tidy tools (Alyssa?)
+9:00 AM – 09:45 AM: Tutorial - Data manipulation with tidy tools
 
-10:00 AM – 11:00 AM: Tutorial - Data visualization with ggplot2 (?)
+09:45 AM - 10:30 AM: Tutorial - Data visualization with ggplot2
 
-11:00 AM – 12:00 PM: Tutorial - Data modelling with caret (Ryan?)
+10:30 AM - 11:15 PM: Tutorial - Data modelling with caret
 
-12:00 PM – 1:00 PM: Lunch - Sandwiches, chips, etc.
+11:15 AM - 12:00 PM: Tutorial - Using the AWS Console
+
+12:00 PM – 1:00 PM: Lunch 
 
 1:00 PM – 1:30 PM: Data set released, Data overview, groups formed
 
@@ -22,7 +24,7 @@
 
 9:00 AM – 12:00 PM: Working session
 
-12:00 PM – 1:00 PM: Lunch - Mexican (Hole Mole)
+12:00 PM – 1:00 PM: Lunch
 
 1:00 – 2:00 PM: Groups prepare presentations
 
