@@ -32,9 +32,9 @@ OCRUG prioritizes marginalized people’s safety over privileged people’s comf
 
 ## REPORTING
 
-If you are being harassed by a member/guest/participant of/at OCRUG, notice that someone else is being harassed, or have any other concerns, please contact the organizers via reporting [at] rladies [dot] org. Local incidences will be handled together with the local organisers. If the person who is harassing you is on the team, they will recuse themselves from handling your incident. We will respond as promptly as we can.
+If you are being harassed by a member/guest/participant of/at OCRUG, notice that someone else is being harassed, or have any other concerns, please contact the organizers via orangecounty.rug [at] gmail [dot] com. Local incidences will be handled together with the local organisers. If the person who is harassing you is on the team, they will recuse themselves from handling your incident. We will respond as promptly as we can.
 
-This code of conduct applies to OCRUG spaces, but if you are being harassed by a member/guest/participant of/at OCRUG outside our spaces, we still want to know about it. We will take all good-faith reports of harassment by OCRUG members, especially the organizers, seriously. This includes harassment outside our spaces and harassment that took place at any point in time. The organizers reserve the right to exclude people from OCRUG based on their past behavior, including behavior outside OCRUG spaces and behavior towards people who are not in R-ladies.
+This code of conduct applies to OCRUG spaces, but if you are being harassed by a member/guest/participant of/at OCRUG outside our spaces, we still want to know about it. We will take all good-faith reports of harassment by OCRUG members, especially the organizers, seriously. This includes harassment outside our spaces and harassment that took place at any point in time. The organizers reserve the right to exclude people from OCRUG based on their past behavior, including behavior outside OCRUG spaces and behavior towards people who are not in OCRUG.
 
 In order to protect volunteers from abuse and burnout, we reserve the right to reject any report we believe to have been made in bad faith. Reports intended to silence legitimate criticism may be deleted without response.
 
