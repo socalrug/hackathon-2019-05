@@ -48,4 +48,7 @@ If a participant engages in harassing behavior, the organizers may take any acti
 
 This policy is licensed under the Creative Commons Zero license.
 
+## R Consortium and the R Community Code of Conduct
+
+By reference this Code of Conduct also includes the [R Consortium's Code of Conduct](https://wiki.r-consortium.org/view/R_Consortium_and_the_R_Community_Code_of_Conduct).
 
