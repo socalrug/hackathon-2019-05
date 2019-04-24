@@ -10,6 +10,12 @@ The event will start with a series of practical educational tutorials to get you
 
 This event is open to data scientists, enthusiasts and hackers of all levels, from the beginner to the highly experienced.  If you are a beginner, it may be helpful to do some preparatory learning before the event — see the suggested resources below.  If you are an experienced user, we look forward to you sharing your expertise with others. Assisting others, both within and between teams, is highly encouraged.
 
+## Goals of the Hackathon
+
+* The hackathon is primarily an *educational* event, not a competition.  However, the hackathon is framed in the context of a light competition to provide overall structure, including team-based collaboration, presentation of final work, judging, and prizes.
+* *Novice Users*: provide an opportunity to work with a real-world data sets from start (acquire the data) to finish (produce a final “report” on the findings from their work).
+* *Experienced Users*: provide an opportunity to practice data analysis skills in a structured environment, interact with others, and assist new users.
+
 
 ## Event Details
 
