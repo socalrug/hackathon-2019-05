@@ -94,7 +94,7 @@ This event is open to data scientists, enthusiasts and hackers of all levels, fr
     * 1-year membership to [DataCamp](https://www.datacamp.com/)
 * Best Model
     * Team prize
-    * [Data Science Go Conference Tickets](https://www.datasciencego.com/)
+    * [Data Science Go](https://www.datasciencego.com/) conference tickets
 * Best Insight
     * Team prize
     * 1-year membership to [SuperDataScience](https://www.superdatascience.com/)
@@ -158,4 +158,9 @@ Food, drinks and snacks will be provided throughout the event.  We will have veg
 
 ## Sponsors
 
-
+* [Data Science Go](https://www.datasciencego.com/)
+* [DataCamp](https://datacamp.com)
+* [R Consortium](https://www.r-consortium.org/)
+* [RStudio](https://www.rstudio.com/)
+* [SuperDataScience](https://www.superdatascience.com/)
+* [UC Irvine - Paul Merage School of Business](https://merage.uci.edu/) 
