@@ -10,6 +10,12 @@ The event will start with a series of practical educational tutorials to get you
 
 This event is open to data scientists, enthusiasts and hackers of all levels, from the beginner to the highly experienced.  If you are a beginner, it may be helpful to do some preparatory learning before the event — see the suggested resources below.  If you are an experienced user, we look forward to you sharing your expertise with others. Assisting others, both within and between teams, is highly encouraged.
 
+## Goals of the Hackathon
+
+* The hackathon is primarily an *educational* event, not a competition.  However, the hackathon is framed in the context of a light competition to provide overall structure, including team-based collaboration, the presentation of final work, judging, and prizes.
+* *Novice Users*: provide an opportunity to work with a real-world data sets from start (acquire the data) to finish (produce a final “report” on the findings from their work).
+* *Experienced Users*: provide an opportunity to practice data analysis skills in a structured environment, interact with others, and assist new users.
+
 
 ## Event Details
 
@@ -69,7 +75,7 @@ This event is open to data scientists, enthusiasts and hackers of all levels, fr
 * All participants must [register for the event](https://www.eventbrite.com/e/ocrug-data-science-hackathon-registration-58927749485) and have a valid ticket to attend.
 * All participants must abide by the [OCRUG Code of Conduct](https://github.com/ocrug/hackathon-2019/blob/master/code-of-conduct.md), including the [R Consortium and the R Community Code of Conduct](https://wiki.r-consortium.org/view/R_Consortium_and_the_R_Community_Code_of_Conduct).
 * Participants are free to come and go during the event. However, any participant who has not checked-in, in person, by 2PM on Saturday will be considered a "no-show" and their spot may be given to someone else.
-* Though this is an **R** focused event, participants are free to use any programming language or tool for their work.
+* Though this is an R focused event, participants are free to use any programming language or tool for their work.
 * Participants are free to work on their projects both onsite at the Hackathon and offsite, though we highly encourage participants to attend all working sessions to maximize team and group interactions.
 * We ask that the final submissions from the teams are a result of *work performed during the event*.  Please do not use any previous work you or others may have produced as part of team submissions.
 
@@ -111,5 +117,45 @@ If you have problems, please call OIT support line at (949) 824-2222 option 3
 
 ## Resources
 
+* [RStudio Cheat Sheets](https://www.rstudio.com/resources/cheatsheets/)
+    * 1-page note sheets covering data science fundamentals and useful R packages.
+
+* [R for Data Science](https://r4ds.had.co.nz)
+    * Comprehensive book on the complete data science workflow, including data importing/cleaning, visualization, and data analysis
+    * Focus on `tidyverse` packages
+    * Accessible for beginners who have a basic grasp of R
+
+* [Tidyverse, Main Site](https://www.tidyverse.org)
+    * This is the hub website for the core `tidyverse` packages
+    * Check out the *Packages* section and associated links for helpful information on using the packages.
+
+* [ggplot2 Reference Docs](https://ggplot2.tidyverse.org/reference/)
+    * Useful when you need to look up more info on specific geoms, stats, scales, etc.
+    * Check out the examples in the details pages for each function.
+
+* [Advanced R, 2nd Edition](https://adv-r.hadley.nz)
+    * This book digs into the details of R.
+    * A great resource for more advanced users wanting to learning more about R under the hood.
+    * There is also a [1st Edition](http://adv-r.had.co.nz/) of the book.
+
 
 ## Food
+
+Food, drinks and snacks will be provided throughout the event.  We will have vegetarian options available. Please feel free to bring any additional food for yourself if you would like to supplement the meals or if you have other specific dietary constraints.
+
+* **Saturday**
+    * *Breakfast*: coffee, light breakfast
+    * *Lunch*: sandwiches and salad
+    * *Dinner*: mexican (tacos, rice & beans, chips & salsa)
+* **Sunday**
+    * *Breakfast*: coffee, light breakfast
+    * *Lunch*: pizza and salad
+* **Snacks and Drinks**
+    * Coffee
+    * Soft drinks
+    * Water
+    * Various snacks, TBD (e.g. fruit, chips, nuts, granola bars)
+
+## Sponsors
+
+
