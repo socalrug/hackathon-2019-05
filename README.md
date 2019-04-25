@@ -12,7 +12,7 @@ This event is open to data scientists, enthusiasts and hackers of all levels, fr
 
 ## Goals of the Hackathon
 
-* The hackathon is primarily an *educational* event, not a competition.  However, the hackathon is framed in the context of a light competition to provide overall structure, including team-based collaboration, presentation of final work, judging, and prizes.
+* The hackathon is primarily an *educational* event, not a competition.  However, the hackathon is framed in the context of a light competition to provide overall structure, including team-based collaboration, the presentation of final work, judging, and prizes.
 * *Novice Users*: provide an opportunity to work with a real-world data sets from start (acquire the data) to finish (produce a final “report” on the findings from their work).
 * *Experienced Users*: provide an opportunity to practice data analysis skills in a structured environment, interact with others, and assist new users.
 
@@ -45,8 +45,8 @@ This event is open to data scientists, enthusiasts and hackers of all levels, fr
 | 9:00 AM – 09:45 AM  | Tutorial - Data manipulation with tidy tools    |
 | 9:45 AM - 10:30 AM  | Tutorial - Data visualization with ggplot2      |
 | 10:30 AM - 11:15 AM | Tutorial - Data modelling with caret            |
-| 11:15 AM - 12:00 PM | Tutorial - Using the AWS Console                |
-| 12:00 PM – 1:00 PM  | Lunch                                           |
+| 11:15 AM - 12:15 PM | Tutorial - Using the AWS Console                |
+| 12:15 PM – 1:00 PM  | Lunch                                           |
 | 1:00 PM – 1:30 PM   | Data set released, Data overview, groups formed |
 | 1:30 PM – 5:30 PM   | Working Session                                 |
 | 5:30 PM – 7:00 PM   | Dinner & Discussion Session                      |
