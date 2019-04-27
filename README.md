@@ -21,13 +21,19 @@ This event is open to data scientists, enthusiasts and hackers of all levels, fr
 
 **When**: May 18 -- 19, 2019 
 
-* Saturday: 9AM -- 10PM
-* Sunday: 9AM -- 4PM
+* Saturday: 9:00 AM - 10:00 PM
+* Sunday: 9:00 AM - 4:00 PM
 
 **Where**: University of California, Irvine -- Paul Merage School of Business 
 
 * [Google Maps](https://www.google.com/maps/place/The+Paul+Merage+School+of+Business/@33.6468381,-117.8402619,17z/data=!3m1!4b1!4m5!3m4!1s0x80dcde0edc8d16f9:0x42b754c2a210a0e0!8m2!3d33.6468337!4d-117.8380732)
 * [Directions & Parking Information](https://github.com/ocrug/hackathon-2019/blob/master/parking/Parking%20and%20Building%20Location.pdf)
+* Rooms
+    * SB1 2301 - Main event room
+    * SB1 3100 - break out room - meeting room
+    * SB1 3104 - break out room - meeting room
+    * SB1 3107 - break out room - quite room
+    * SB1 3313 - break out room - meals and storage
 
 **Registration**
 
@@ -49,7 +55,7 @@ This event is open to data scientists, enthusiasts and hackers of all levels, fr
 | 12:15 PM – 1:00 PM  | Lunch                                           |
 | 1:00 PM – 1:30 PM   | Data set released, Data overview, groups formed |
 | 1:30 PM – 5:30 PM   | Working Session                                 |
-| 5:30 PM – 7:00 PM   | Dinner & Discussion Session                      |
+| 5:30 PM – 7:00 PM   | Dinner & Discussion Session                     |
 | 7:00 PM - 10:00 PM  | Working Session                                 |
 
 ### Sunday
@@ -58,10 +64,10 @@ This event is open to data scientists, enthusiasts and hackers of all levels, fr
 | :--: | :--   |
 | 9:00 AM – 12:00 PM | Working session                   |
 | 12:00 PM – 1:00 PM | Lunch                             |
-| 1:00 PM – 2:00 PM     | Groups prepare presentations      |
+| 1:00 PM – 2:00 PM  | Groups prepare presentations      |
 | 2:00 PM – 3:00 PM  | Group presentations (5 min each)  |
-| 3:00 PM – 3:30 PM     | Judges discuss and select winners |
-| 3:30 PM – 4:00 PM     | Award presentation & wrap-up      |
+| 3:00 PM – 3:30 PM  | Judges discuss and select winners |
+| 3:30 PM – 4:00 PM  | Award presentation & wrap-up      |
 
 
 ## Rules
@@ -81,13 +87,33 @@ This event is open to data scientists, enthusiasts and hackers of all levels, fr
 * All teams will select a *team names* at the beginning of the event.
 * Assisting others within and between teams is highly encouraged.
 
-## Award Categories
+## Award Categories and Prizes
 
-* Best Visualization
+* Most Helpful Person
+    * Personal prize
+    * 1-year membership to [DataCamp](https://www.datacamp.com/)
 * Best Model
+    * Team prize
+    * [Data Science Go](https://www.datasciencego.com/) conference tickets
 * Best Insight
-* MHP -- Most Helpful Person
+    * Team prize
+    * 1-year membership to [SuperDataScience](https://www.superdatascience.com/)
+* Best Visualization
+    * Team prize
+    * Books
+* Everyone
+    * $100 discount code on 1-year membership for [SuperDataScience](https://www.superdatascience.com/)
+    * Stickers
+    * $30 of AWS credits (expire: 2019-08-31)
+    * 1-month membership to [DataCamp](https://www.datacamp.com/)
 
+## WiFi Access
+
+* Connect to SSID: UCInet Mobile
+* Go to [https://oit.uci.edu/reg](https://oit.uci.edu/reg)
+* register your device as a guest
+
+If you have problems, please call OIT support line at (949) 824-2222 option 3
 
 ## Resources
 
@@ -132,4 +158,9 @@ Food, drinks and snacks will be provided throughout the event.  We will have veg
 
 ## Sponsors
 
-
+* [Data Science Go](https://www.datasciencego.com/)
+* [DataCamp](https://datacamp.com)
+* [R Consortium](https://www.r-consortium.org/)
+* [RStudio](https://www.rstudio.com/)
+* [SuperDataScience](https://www.superdatascience.com/)
+* [UC Irvine - Paul Merage School of Business](https://merage.uci.edu/) 
