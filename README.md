@@ -91,7 +91,7 @@ This event is open to data scientists, enthusiasts and hackers of all levels, fr
 
 * Most Helpful Person
     * Personal prize
-    * 1-year membership to [DataCamp](https://www.datacamp.com/)
+    * 1-year membership to [SuperDataScience](https://www.superdatascience.com/)
 * Best Model
     * Team prize
     * [Data Science Go](https://www.datasciencego.com/) conference tickets
@@ -159,7 +159,6 @@ Food, drinks and snacks will be provided throughout the event.  We will have veg
 ## Sponsors
 
 * [Data Science Go](https://www.datasciencego.com/)
-* [DataCamp](https://datacamp.com)
 * [R Consortium](https://www.r-consortium.org/)
 * [RStudio](https://www.rstudio.com/)
 * [SuperDataScience](https://www.superdatascience.com/)
