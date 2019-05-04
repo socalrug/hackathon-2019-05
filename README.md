@@ -133,6 +133,9 @@ If you have problems, please call OIT support line at (949) 824-2222 option 3
     * Useful when you need to look up more info on specific geoms, stats, scales, etc.
     * Check out the examples in the details pages for each function.
 
+* [The R Graph Gallary](https://www.r-graph-gallery.com/)
+    * Gallary of various types of chart and the code needed to create them. 
+
 * [Advanced R, 2nd Edition](https://adv-r.hadley.nz)
     * This book digs into the details of R.
     * A great resource for more advanced users wanting to learning more about R under the hood.
