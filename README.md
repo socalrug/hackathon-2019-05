@@ -170,3 +170,28 @@ Food, drinks and snacks will be provided throughout the event.  We will have veg
 * [RStudio](https://www.rstudio.com/)
 * [SuperDataScience](https://www.superdatascience.com/)
 * [UC Irvine - Paul Merage School of Business](https://merage.uci.edu/) 
+
+
+## Data
+
+This is an open data hackathon. Any and all puplicly avaliable data can be used as long as it adheres to the rules. Listed below is a handful of datasets that provides a good starting point. All of these datasets allong with data dictionaries are located in the data folder in this repository.
+
+### Dataset #1 - Drinking Water Watch - Public Water System Information
+[Open Data Format](https://data.ca.gov/dataset/drinking-water-public-water-system-information)
+
+### Dataset #2 - California Population Projection by County, Age, Gender and Ethnicity
+[Open Data Format](https://data.ca.gov/dataset/california-population-projection-county-age-gender-and-ethnicity)
+
+### Dataset #3 - Periodic Groundwater Level Measurements
+[Open Data Format](https://data.cnra.ca.gov/dataset/periodic-groundwater-level-measurements)
+
+### Dataset #4 - Human Right to Water Regulatory
+[Open Data Format](https://data.ca.gov/dataset/drinking-water-human-right-water-regulatory-including-enforcement-actions-information)
+
+### Additional datasets
+
+- [California Open Data Portal](https://data.ca.gov/)
+- [Water related datasets](https://data.ca.gov/search/field_topic/water-46)
+- [U.S. Governments open data](https://www.data.gov/)
+- [California Natural Resources Agency Open Data](https://data.cnra.ca.gov/)
+- [Nartional Water Quality Monitoring Council](https://www.waterqualitydata.us/)
