@@ -129,14 +129,21 @@ If you have problems, please call OIT support line at (949) 824-2222 option 3
     * This is the hub website for the core `tidyverse` packages
     * Check out the *Packages* section and associated links for helpful information on using the packages.
 
-* [ggplot2 Reference Docs](https://ggplot2.tidyverse.org/reference/)
-    * Useful when you need to look up more info on specific geoms, stats, scales, etc.
-    * Check out the examples in the details pages for each function.
-
 * [Advanced R, 2nd Edition](https://adv-r.hadley.nz)
     * This book digs into the details of R.
     * A great resource for more advanced users wanting to learning more about R under the hood.
     * There is also a [1st Edition](http://adv-r.had.co.nz/) of the book.
+
+* [ggplot2 Reference Docs](https://ggplot2.tidyverse.org/reference/)
+    * Useful when you need to look up more info on specific geoms, stats, scales, etc.
+    * Check out the examples in the details pages for each function.
+
+* [The R Graph Gallary](https://www.r-graph-gallery.com/)
+    * Gallary of various types of chart and the code needed to create them. 
+    
+* [R Graphics Cookbook](https://r-graphics.org/)
+    * A practical guide that provides more than 150 recipes
+
 
 
 ## Food
