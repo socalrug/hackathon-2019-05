@@ -1,7 +1,5 @@
 # OCRUG Hackathon 2019
 
-*(2019-04-11) WORK IN PROGRESS: THE INFORMATION BELOW IS TENTATIVE*
-
 ## Event Summary
 
 The OCRUG Hackathon 2019, hosted by the [Orange County R Users Group](https://ocrug.org) and the [UCI Paul Merage School of Business](https://merage.uci.edu) is a two day event where we will "hack" a data set for fun, education, and prizes.  The focus of the event is on education and teamwork, with the main goal of taking a data set from its "raw" form all the way through to a final "product" (e.g. visualization, model, insight).  To frame this process, we will have light competitive aspect where teams will present their work at end of the event to a panel of judges, with prizes awarded in several categories (see below).
@@ -19,10 +17,10 @@ This event is open to data scientists, enthusiasts and hackers of all levels, fr
 
 ## Event Details
 
-**When**: May 18 -- 19, 2019 
+**When**: May 18 and 19, 2019 
 
-* Saturday: 9:00 AM - 10:00 PM
-* Sunday: 9:00 AM - 4:00 PM
+* Saturday: 8:30 AM - 10:00 PM
+* Sunday: 8:30 AM - 4:00 PM
 
 **Where**: University of California, Irvine -- Paul Merage School of Business 
 
@@ -43,7 +41,6 @@ This event is open to data scientists, enthusiasts and hackers of all levels, fr
 *Registration is currently full, but please sign-up on the waitlist!*
 
 ## Schedule
-
 
 ### Saturday
 
@@ -78,18 +75,18 @@ This event is open to data scientists, enthusiasts and hackers of all levels, fr
 
 * All participants must [register for the event](https://www.eventbrite.com/e/ocrug-data-science-hackathon-registration-58927749485) and have a valid ticket to attend.
 * All participants must abide by the [OCRUG Code of Conduct](https://github.com/ocrug/hackathon-2019/blob/master/code-of-conduct.md), including the [R Consortium and the R Community Code of Conduct](https://wiki.r-consortium.org/view/R_Consortium_and_the_R_Community_Code_of_Conduct).
-* Participants are free to come and go during the event. However, any participant who has not checked-in, in person, by 2PM on Saturday will be considered a "no-show" and their spot may be given to someone else.
+* Participants are free to come and go during the event. However, any participant who has not checked-in, in person, by 01:00 PM on Saturday will be considered a "no-show" and their spot may be given to someone else.
 * Though this is an R focused event, participants are free to use any programming language or tool for their work.
 * Participants are free to work on their projects both onsite at the Hackathon and offsite, though we highly encourage participants to attend all working sessions to maximize team and group interactions.
 * We ask that the final submissions from the teams are a result of *work performed during the event*.  Please do not use any previous work you or others may have produced as part of team submissions.
 
 ## Teams
 
-* All participants will work on teams between 2 and 5 people in size.
+* All participants will work on teams between 2 and 5 people.
 * Participants are free to form their own teams prior to the event.
 * We will assist in team formation at the beginning of the event for any participants that do not already have a team.
-* All teams will select a *team names* at the beginning of the event.
-* Assisting others within and between teams is highly encouraged.
+* Teams will select a *team name*.
+* *Assisting others within and between teams is highly encouraged.*
 
 ## Award Categories and Prizes
 
@@ -108,7 +105,8 @@ This event is open to data scientists, enthusiasts and hackers of all levels, fr
 * Everyone
     * $100 discount code on 1-year membership for [SuperDataScience](https://www.superdatascience.com/)
     * Stickers
-    * $30 of AWS credits (expire: 2019-08-31)
+    * [$30 of AWS credits](https://github.com/ocrug/hackathon-2019/blob/master/AWS_credits.md)
+* Early-bird registration
     * 1-month membership to [DataCamp](https://www.datacamp.com/)
 
 ## WiFi Access

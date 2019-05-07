@@ -1,6 +1,6 @@
 # AWS Credits for OCRUG Hackathon
 
-OCRUG, in partnership with UCI, was able to secure a limited number of credits for the hackathon. You will be personally be responsible for any AWS fees that you incure above the value of credits that you receive or are not covered by the credits.
+OCRUG, in partnership with UCI, was able to secure a limited number of credits for the hackathon. You will be personally be responsible for any AWS fees that you incure above the value of credits that you receive or for services that are not covered by the credits.
 
 If you do not have an AWS account, you will have to create one. You can monitor your costs in the console and setting up a alarms. The following references may also be helpful:
 
@@ -15,19 +15,19 @@ Each Promotion code amount is - $30.00 USD
 
 # Redeeming Codes
 
-You may either instruct the customer that code(s) should be redeemed by visiting [https://aws.amazon.com/awscredits/](https://aws.amazon.com/awscredits/) or by entering code via AWS account dashboard, under ‘credits’. This ensures that the customer agrees to AWS Credits Terms and Conditions
+You redeemed the credits by visiting [https://aws.amazon.com/awscredits/](https://aws.amazon.com/awscredits/) or by entering code via AWS account dashboard, under ‘credits’. You must agree to AWS Credits Terms and Conditions
 
 # Billing
 
-Please instruct customer to set up billing alerts [https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/monitor-charges.html](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/monitor-charges.html) ASAP in order to avoid unwanted charges. If promotional credits are for an event/workshop/seminar and the account is not intended to remain open afterwards please make sure facilitator instructs customer how to close account. Unfortunately, we are unable to refund usage after credits have beenexhausted.[https://aws.amazon.com/premiumsupport/knowledge-center/close-aws-account/](https://aws.amazon.com/premiumsupport/knowledge-center/close-aws-account/).
+You may set up billing alerts [https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/monitor-charges.html](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/monitor-charges.html) in order to avoid unwanted charges. Credits are non-refundable [https://aws.amazon.com/premiumsupport/knowledge-center/close-aws-account/](https://aws.amazon.com/premiumsupport/knowledge-center/close-aws-account/).
 
 # Credit Sharing and Organizations
 
-Please instruct the customer if they are planning to join Organizations [https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html) or add other accounts to their Organization, to be aware that by default, promotional credits are shared between all accounts in an Organization. Credit sharing [https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/useconsolidatedbilling-credits.html](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/useconsolidatedbilling-credits.html) can be disabled by the Payer (Master Account) only via Preferences tab within main account dashboard. If you navigate to the preference tab of your console you can see if credits are currently being shared within your Organization. Please review information on credits and billing cycle [https://aws.amazon.com/premiumsupport/knowledge-center/consolidated-billing-credits/](https://aws.amazon.com/premiumsupport/knowledge-center/consolidated-billing-credits/), or contact our team if you have questions. 
+If yau are planning to join organizations [https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html) or add other accounts to your organization, to be aware that by default, promotional credits are shared between all accounts in an organization. Credit sharing [https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/useconsolidatedbilling-credits.html](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/useconsolidatedbilling-credits.html) can be disabled by the Payer (Master Account) only via Preferences tab within main account dashboard. If you navigate to the preference tab of your console you can see if credits are currently being shared within your Organization. Please review information on credits and billing cycle [https://aws.amazon.com/premiumsupport/knowledge-center/consolidated-billing-credits/](https://aws.amazon.com/premiumsupport/knowledge-center/consolidated-billing-credits/), or contact AWS support if you have questions. 
 
 # Support
 
-If you requested support services to be included in the promotion, please note that upfront Subscription fees are not covered by promotional credits. However- monthly recurring costs of Support would be covered if selected to include.
+Some support may be covered by your promotional credits. Please note that upfront Subscription fees are not covered by promotional credits. See below for a list of the support that is covered.
 
 # PromotionCodes Applicable To
 
