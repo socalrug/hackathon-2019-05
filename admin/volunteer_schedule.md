@@ -16,13 +16,13 @@ Below is a schedule of specific times and tasks for the helpers
 | :--        | :--                 | :--                 | :-- |
 | 2019-05-18 | 08:00 AM - 09:00 AM | Shruhi Desai        | Unload supplies and bring into SB1, set-up coffee, snack station and breakfast station |
 |            | 09:00 AM - 12:30 PM | Nijanth Anand       | Refill snacks and coffee as needed. Clean up snack area.  Make sure there is enough coffee for the break and lunch |
-|            | 12:00 PM - 03:00 PM | Chris Pound         | Setup and clean up lunch. Garbage pickup is at 1:00 PM. Refill coffee and snacks |
+|            | 12:00 PM - 03:00 PM | Chris Pounds        | Setup and clean up lunch. Garbage pickup is at 1:00 PM. Refill coffee and snacks |
 |            | 03:00 PM - 06:00 PM | Samira Varadharajan | Setup supper and make sure there is coffee. Clean up break rooms |
 |            | 06:00 PM - 09:00 PM | Pablo Barajas       | Clean up from supper, clean up break rooms, refill coffee and snacks |
 |            | 09:00 PM - 10:00 PM | Shruhi Desai        | Clean up break rooms, empty and clean up coffee and snack area, make sure all garbage is collected |
 | 2019-05-19 | 08:00 AM - 09:00 AM | Pablo Barajas       | Make coffee, set up snacks and breakfast |
 |            | 09:00 AM - 12:30 PM | Nijanth Anand       | Refill snacks and coffee as needed. Clean up snack area. Make sure there is enough coffee for lunch. Help setup lunch |
-|            | 12:00 PM - 03:00 PM | Chris Pound         | Setup and clean up lunch. Garbage pickup is at 1:00 PM. Collect garbage, refill coffee and snacks, clean up break rooms |
+|            | 12:00 PM - 03:00 PM | Chris Pounds        | Setup and clean up lunch. Garbage pickup is at 1:00 PM. Collect garbage, refill coffee and snacks, clean up break rooms |
 |            | 03:00 PM - 05:00 PM | Shruhi Desai        | Clean up break rooms, empty and clean up coffee and snack area, make sure all garbage is collected |
 |            | 03:00 PM - 05:00 PM | Samira Varadharajan | Clean up SB1 2301, make sure all garbage is collected, help carry supplies back to cars |
 
