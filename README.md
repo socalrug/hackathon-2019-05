@@ -80,6 +80,22 @@ This event is open to data scientists, enthusiasts and hackers of all levels, fr
 * Participants are free to work on their projects both onsite at the Hackathon and offsite, though we highly encourage participants to attend all working sessions to maximize team and group interactions.
 * We ask that the final submissions from the teams are a result of *work performed during the event*.  Please do not use any previous work you or others may have produced as part of team submissions.
 
+## WiFi Access
+
+* Connect to SSID: UCInet Mobile
+* Go to [https://oit.uci.edu/reg](https://oit.uci.edu/reg)
+* register your device as a guest
+
+If you have problems, please call OIT support line at (949) 824-2222 option 3
+
+## GitHub Repo
+
+OCRUG GitHub Repo: [https://github.com/ocrug/](https://github.com/ocrug/)
+
+** Please install git and clone the following repo before the event and pull before the start of the event**
+command: git clone git@github.com:ocrug/hackathon-2019.git
+Hackathon Repo: [https://github.com/ocrug/hackathon-2019](https://github.com/ocrug/hackathon-2019)
+
 ## Teams
 
 * All participants will work on teams between 2 and 5 people.
@@ -108,14 +124,6 @@ This event is open to data scientists, enthusiasts and hackers of all levels, fr
     * [$30 of AWS credits](https://github.com/ocrug/hackathon-2019/blob/master/AWS_credits.md)
 * Early-bird registration
     * 1-month membership to [DataCamp](https://www.datacamp.com/)
-
-## WiFi Access
-
-* Connect to SSID: UCInet Mobile
-* Go to [https://oit.uci.edu/reg](https://oit.uci.edu/reg)
-* register your device as a guest
-
-If you have problems, please call OIT support line at (949) 824-2222 option 3
 
 ## Resources
 
