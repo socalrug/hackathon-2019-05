@@ -120,7 +120,7 @@ The channel for the hackathon is **hackathon-2019**
 
 ## Award Categories and Prizes
 
-Details about the team presentations, award categories, and judging guidlines can be found [here](https://github.com/ocrug/hackathon-2019/blob/master/presentations_and_judging_guidelines.md.md).
+Details about the team presentations, award categories, and judging guidlines can be found [here](https://github.com/ocrug/hackathon-2019/blob/master/presentations_and_judging_guidelines.md).
 
 * Most Helpful Person
     * Personal prize
