@@ -108,7 +108,7 @@ Once you have an account, sign in (you can do it on a web browser or download an
 
 Slack channel: [https://ocrug.slack.com](https://ocrug.slack.com)
 
-The channel for the hackathon is **hackathon**
+The channel for the hackathon is **hackathon-2019**
 
 ## Teams
 
@@ -119,6 +119,8 @@ The channel for the hackathon is **hackathon**
 * *Assisting others within and between teams is highly encouraged.*
 
 ## Award Categories and Prizes
+
+Details about the team presentations, award categories, and judging guidlines can be found [here](https://github.com/ocrug/hackathon-2019/blob/master/presentations_and_judging_guidelines.md.md).
 
 * Most Helpful Person
     * Personal prize
