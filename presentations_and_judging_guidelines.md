@@ -30,6 +30,7 @@ Tips for presentations:
 * Decide in advance who will speak during the presentation.
 * Practice your presentation at least one time to get a feel for timing and content.
 
+
 ## Judging Guidelines
 
 ### Best Insight
@@ -59,5 +60,9 @@ Tips for presentations:
 * Teams presenting modeling results should also report an assessment of model performance (e.g. RMSE, confusion matrices/TPR/FPR/accuracy, ROC AUC, etc). 
 * Models will be judged based the underlying question the model is trying to address, the interpretation of the results, the performance of the model, and the validity of the methods used to derive the model.
 
+### Most Helpful Person
+
+* In addition to the team presentations, the *Most Helpful Person* award will be awarded to the most helpful person at the event, as voted upon by the hackathon participants.
+* Before lunch on Sunday, participants will vote for the most helpful person via a Shiny applications.  The person with the most votes will recieve the *Most Helpful Person* award.
 
 
