@@ -93,7 +93,9 @@ If you have problems, please call OIT support line at (949) 824-2222 option 3
 OCRUG GitHub Repo: [https://github.com/ocrug/](https://github.com/ocrug/)
 
 **Please install git and clone the following repo before the event and pull before the start of the event**
+
 command: git clone git@github.com:ocrug/hackathon-2019.git
+
 Hackathon Repo: [https://github.com/ocrug/hackathon-2019](https://github.com/ocrug/hackathon-2019)
 
 ## Slack Channel
