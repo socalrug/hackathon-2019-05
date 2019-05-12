@@ -1,7 +1,5 @@
 # OCRUG Hackathon 2019
 
-*(2019-04-11) WORK IN PROGRESS: THE INFORMATION BELOW IS TENTATIVE*
-
 ## Event Summary
 
 The OCRUG Hackathon 2019, hosted by the [Orange County R Users Group](https://ocrug.org) and the [UCI Paul Merage School of Business](https://merage.uci.edu) is a two day event where we will "hack" a data set for fun, education, and prizes.  The focus of the event is on education and teamwork, with the main goal of taking a data set from its "raw" form all the way through to a final "product" (e.g. visualization, model, insight).  To frame this process, we will have light competitive aspect where teams will present their work at end of the event to a panel of judges, with prizes awarded in several categories (see below).
@@ -19,10 +17,10 @@ This event is open to data scientists, enthusiasts and hackers of all levels, fr
 
 ## Event Details
 
-**When**: May 18 -- 19, 2019 
+**When**: May 18 and 19, 2019 
 
-* Saturday: 9:00 AM - 10:00 PM
-* Sunday: 9:00 AM - 4:00 PM
+* Saturday: 8:30 AM - 10:00 PM
+* Sunday: 8:30 AM - 4:00 PM
 
 **Where**: University of California, Irvine -- Paul Merage School of Business 
 
@@ -48,46 +46,81 @@ This event is open to data scientists, enthusiasts and hackers of all levels, fr
 
 | Time | Event |
 | :--: | :--   |
-| 9:00 AM – 09:45 AM  | Tutorial - Data manipulation with tidy tools    |
-| 9:45 AM - 10:30 AM  | Tutorial - Data visualization with ggplot2      |
-| 10:30 AM - 11:15 AM | Tutorial - Data modelling with caret            |
-| 11:15 AM - 12:15 PM | Tutorial - Using the AWS Console                |
-| 12:15 PM – 1:00 PM  | Lunch                                           |
-| 1:00 PM – 1:30 PM   | Data set released, Data overview, groups formed |
-| 1:30 PM – 5:30 PM   | Working Session                                 |
-| 5:30 PM – 7:00 PM   | Dinner & Discussion Session                     |
-| 7:00 PM - 10:00 PM  | Working Session                                 |
+| 08:30 AM - 09:00 AM | Registration and breakfast                      |
+| 09:00 AM – 09:45 AM | Tutorial - Data manipulation with tidy tools    |
+| 09:45 AM - 10:30 AM | Tutorial - Data visualization with ggplot2      |
+| 10:30 AM - 10:45 AM | Break                                           |
+| 10:45 AM - 11:30 AM | Tutorial - Data modelling with caret            |
+| 11:30 AM - 12:30 PM | Tutorial - Using the AWS Console                |
+| 12:30 PM – 01:00 PM | Lunch                                           |
+| 01:00 PM – 01:30 PM | Data set released, Data overview, groups formed |
+| 01:30 PM – 05:30 PM | Working Session                                 |
+| 05:30 PM – 07:00 PM | Dinner & Discussion Session                     |
+| 07:00 PM - 10:00 PM | Working Session                                 |
 
 ### Sunday
 
 | Time | Event |
 | :--: | :--   |
-| 9:00 AM – 12:00 PM | Working session                   |
-| 12:00 PM – 1:00 PM | Lunch                             |
-| 1:00 PM – 2:00 PM  | Groups prepare presentations      |
-| 2:00 PM – 3:00 PM  | Group presentations (5 min each)  |
-| 3:00 PM – 3:30 PM  | Judges discuss and select winners |
-| 3:30 PM – 4:00 PM  | Award presentation & wrap-up      |
+| 08:30 AM - 09:00 AM | Breakfast                         |
+| 09:00 AM – 12:00 PM | Working session                   |
+| 12:00 PM – 01:00 PM | Lunch                             |
+| 01:00 PM – 02:00 PM | Groups prepare presentations      |
+| 02:00 PM – 03:00 PM | Group presentations (5 min each)  |
+| 03:00 PM – 03:30 PM | Judges discuss and select winners |
+| 03:30 PM – 04:00 PM | Award presentation & wrap-up      |
 
 
 ## Rules
 
 * All participants must [register for the event](https://www.eventbrite.com/e/ocrug-data-science-hackathon-registration-58927749485) and have a valid ticket to attend.
 * All participants must abide by the [OCRUG Code of Conduct](https://github.com/ocrug/hackathon-2019/blob/master/code-of-conduct.md), including the [R Consortium and the R Community Code of Conduct](https://wiki.r-consortium.org/view/R_Consortium_and_the_R_Community_Code_of_Conduct).
-* Participants are free to come and go during the event. However, any participant who has not checked-in, in person, by 2PM on Saturday will be considered a "no-show" and their spot may be given to someone else.
+* Participants are free to come and go during the event. However, any participant who has not checked-in, in person, by 01:00 PM on Saturday will be considered a "no-show" and their spot may be given to someone else.
 * Though this is an R focused event, participants are free to use any programming language or tool for their work.
 * Participants are free to work on their projects both onsite at the Hackathon and offsite, though we highly encourage participants to attend all working sessions to maximize team and group interactions.
 * We ask that the final submissions from the teams are a result of *work performed during the event*.  Please do not use any previous work you or others may have produced as part of team submissions.
 
+## WiFi Access
+
+* Connect to SSID: UCInet Mobile
+* Go to [https://oit.uci.edu/reg](https://oit.uci.edu/reg)
+* register your device as a guest
+
+If you have problems, please call OIT support line at (949) 824-2222 option 3
+
+## GitHub Repo
+
+OCRUG GitHub Repo: [https://github.com/ocrug/](https://github.com/ocrug/)
+
+** Please install git and clone the following repo before the event and pull before the start of the event**
+command: git clone git@github.com:ocrug/hackathon-2019.git
+Hackathon Repo: [https://github.com/ocrug/hackathon-2019](https://github.com/ocrug/hackathon-2019)
+
+## Slack Channel
+
+A slack channel has been set up for the hackathon. This will be used for general announcements but it is also a great source for you to ask questions to other participants.
+
+If you have not created an account on our slack group, create one using the following link:
+
+Slack Group Sign-up: [https://ocrug-slack.herokuapp.com](https://ocrug-slack.herokuapp.com)
+
+Once you have an account, sign in (you can do it on a web browser or download an app on your phone or desktop).
+
+Slack channel: [https://ocrug.slack.com](https://ocrug.slack.com)
+
+The channel for the hackathon is **hackathon-2019**
+
 ## Teams
 
-* All participants will work on teams between 2 and 5 people in size.
+* All participants will work on teams between 2 and 5 people.
 * Participants are free to form their own teams prior to the event.
 * We will assist in team formation at the beginning of the event for any participants that do not already have a team.
-* All teams will select a *team names* at the beginning of the event.
-* Assisting others within and between teams is highly encouraged.
+* Teams will select a *team name*.
+* *Assisting others within and between teams is highly encouraged.*
 
 ## Award Categories and Prizes
+
+Details about the team presentations, award categories, and judging guidlines can be found [here](https://github.com/ocrug/hackathon-2019/blob/master/presentations_and_judging_guidelines.md).
 
 * Most Helpful Person
     * Personal prize
@@ -104,16 +137,9 @@ This event is open to data scientists, enthusiasts and hackers of all levels, fr
 * Everyone
     * $100 discount code on 1-year membership for [SuperDataScience](https://www.superdatascience.com/)
     * Stickers
-    * $30 of AWS credits (expire: 2019-08-31)
+    * [$30 of AWS credits](https://github.com/ocrug/hackathon-2019/blob/master/AWS_credits.md)
+* Early-bird registration
     * 1-month membership to [DataCamp](https://www.datacamp.com/)
-
-## WiFi Access
-
-* Connect to SSID: UCInet Mobile
-* Go to [https://oit.uci.edu/reg](https://oit.uci.edu/reg)
-* register your device as a guest
-
-If you have problems, please call OIT support line at (949) 824-2222 option 3
 
 ## Resources
 
@@ -165,7 +191,7 @@ Food, drinks and snacks will be provided throughout the event.  We will have veg
 
 ## AWS Credits
 
-OCRUG, in partnership with UCI, was able to secure a limited number of credits for the hackathon. You will be personally be responsible for any AWS fees that you incure above the value of credits that you receive or are not covered by the credits.
+OCRUG, in partnership with UCI, was able to secure a limited number of credits for the hackathon. You will be personally be responsible for any AWS fees that you incure above the value of credits that you receive or for services that are not covered by the credits.
 
 If you do not have an AWS account, you will have to create one. You can monitor your costs in the console and setting up a alarms. The following references may also be helpful:
 
@@ -180,19 +206,19 @@ Each Promotion code amount is - $30.00 USD
 
 ### Redeeming Codes
 
-You may either instruct the customer that code(s) should be redeemed by visiting [https://aws.amazon.com/awscredits/](https://aws.amazon.com/awscredits/) or by entering code via AWS account dashboard, under ‘credits’. This ensures that the customer agrees to AWS Credits Terms and Conditions
+You redeemed the credits by visiting [https://aws.amazon.com/awscredits/](https://aws.amazon.com/awscredits/) or by entering code via AWS account dashboard, under ‘credits’. You must agree to AWS Credits Terms and Conditions
 
 ### Billing
 
-Please instruct customer to set up billing alerts [https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/monitor-charges.html](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/monitor-charges.html) ASAP in order to avoid unwanted charges. If promotional credits are for an event/workshop/seminar and the account is not intended to remain open afterwards please make sure facilitator instructs customer how to close account. Unfortunately, we are unable to refund usage after credits have beenexhausted.[https://aws.amazon.com/premiumsupport/knowledge-center/close-aws-account/](https://aws.amazon.com/premiumsupport/knowledge-center/close-aws-account/).
+You may set up billing alerts [https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/monitor-charges.html](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/monitor-charges.html) in order to avoid unwanted charges. Credits are non-refundable [https://aws.amazon.com/premiumsupport/knowledge-center/close-aws-account/](https://aws.amazon.com/premiumsupport/knowledge-center/close-aws-account/).
 
 ### Credit Sharing and Organizations
 
-Please instruct the customer if they are planning to join Organizations [https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html) or add other accounts to their Organization, to be aware that by default, promotional credits are shared between all accounts in an Organization. Credit sharing [https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/useconsolidatedbilling-credits.html](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/useconsolidatedbilling-credits.html) can be disabled by the Payer (Master Account) only via Preferences tab within main account dashboard. If you navigate to the preference tab of your console you can see if credits are currently being shared within your Organization. Please review information on credits and billing cycle [https://aws.amazon.com/premiumsupport/knowledge-center/consolidated-billing-credits/](https://aws.amazon.com/premiumsupport/knowledge-center/consolidated-billing-credits/), or contact our team if you have questions. 
+If yau are planning to join organizations [https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html) or add other accounts to your organization, to be aware that by default, promotional credits are shared between all accounts in an organization. Credit sharing [https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/useconsolidatedbilling-credits.html](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/useconsolidatedbilling-credits.html) can be disabled by the Payer (Master Account) only via Preferences tab within main account dashboard. If you navigate to the preference tab of your console you can see if credits are currently being shared within your Organization. Please review information on credits and billing cycle [https://aws.amazon.com/premiumsupport/knowledge-center/consolidated-billing-credits/](https://aws.amazon.com/premiumsupport/knowledge-center/consolidated-billing-credits/), or contact AWS support if you have questions. 
 
 ### Support
 
-If you requested support services to be included in the promotion, please note that upfront Subscription fees are not covered by promotional credits. However- monthly recurring costs of Support would be covered if selected to include.
+Some support may be covered by your promotional credits. Please note that upfront Subscription fees are not covered by promotional credits. See below for a list of the support that is covered.
 
 ### PromotionCodes Applicable To
 
