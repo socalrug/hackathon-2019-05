@@ -122,7 +122,11 @@ The channel for the hackathon is **hackathon-2019**
 
 ## Award Categories and Prizes
 
-Details about the team presentations, award categories, and judging guidlines can be found [here](https://github.com/ocrug/hackathon-2019/blob/master/presentations_and_judging_guidelines.md).
+See the [presentation guidelines](https://github.com/ocrug/hackathon-2019/blob/master/presentation_guidelines.md) for the requirements. The team
+prizes will be determined by a panel of judges using the following [judging guidelines](https://github.com/ocrug/hackathon-2019/blob/master/admin/judging_guidelines.md). 
+The judge's decision is final.
+
+Below is a list of the awards and prizes that may be given out.
 
 * Most Helpful Person
     * Personal prize
@@ -171,7 +175,6 @@ Details about the team presentations, award categories, and judging guidlines ca
     
 * [R Graphics Cookbook](https://r-graphics.org/)
     * A practical guide that provides more than 150 recipes
-
 
 
 ## Food
