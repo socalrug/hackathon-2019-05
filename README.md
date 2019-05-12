@@ -1,3 +1,8 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
 # OCRUG Hackathon 2019
 
 ## Event Summary
