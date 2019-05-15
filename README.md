@@ -36,7 +36,8 @@ This event is open to data scientists, enthusiasts and hackers of all levels, fr
     * SB1 3100 - break out room - meeting room
     * SB1 3104 - break out room - meeting room
     * SB1 3107 - break out room - quite room
-    * SB1 3313 - break out room - meals and storage
+    * SB1 3313 - break out room - storage
+    * SB1 3rd floor patio - meals
 
 **Registration**
 
