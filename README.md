@@ -59,7 +59,7 @@ This event is open to data scientists, enthusiasts and hackers of all levels, fr
 | 10:45 AM - 11:30 AM | Tutorial - Data modelling with caret            |
 | 11:30 AM - 12:30 PM | Tutorial - Using the AWS Console                |
 | 12:30 PM – 01:00 PM | Lunch                                           |
-| 01:00 PM – 01:30 PM | Data set released, Data overview, groups formed |
+| 01:00 PM – 01:30 PM | Welcome talk, data set overview, groups formed  |
 | 01:30 PM – 05:30 PM | Working Session                                 |
 | 05:30 PM – 07:00 PM | Dinner & Discussion Session                     |
 | 07:00 PM - 10:00 PM | Working Session                                 |
