@@ -122,6 +122,10 @@ Slack channel: [https://ocrug.slack.com](https://ocrug.slack.com)
 
 The channel for the hackathon is **hackathon-2019**
 
+## Twitter
+
+Please follow us on twitter, oc_rug, and also tweet about the event with the hash tag #OCRUG
+
 ## Teams
 
 * All participants will work on teams between 2 and 5 people.
