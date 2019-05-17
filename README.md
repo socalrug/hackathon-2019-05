@@ -171,6 +171,16 @@ Below is a list of the awards and prizes that may be given out.
 
 The award for 'most helpful person' will be decided by a vote among participants. Each participant will be given 10 votes that they can reward other participants for being helpful. Voting for oneself or team members is not allowed. The person with the most votes win. We will be using a website where people will get an email to be able to vote.
 
+## Saturday discussion session
+
+There will be a discussion session happening Saturday between 6:00 PM and 7:00 PM. The goal of this hour is to allow sharing of ideas, knowledge and inspiration between groups. At the top of the hour each team will be presented with a "bingo card" with the names of all the teams on in. The objective is then for each team to cross out as many names as possible by having a team-member go visit another team to hear about what they are doing and share thoughts.
+
+To make this session run as smooth as possible please
+
+* Have at least one person stay back to talk to in coming participants from other teams.
+* Plan 2-3 min talk explaining what you have been doing as time will be a little limited.
+* Allow for multiple participants to take part of the conversation at any given group discussion.
+* Remember that the hackathon is primarily a education event and sharing of ideas is highly encouraged.
 
 ## Resources
 
