@@ -1,4 +1,4 @@
-# CODE OF CONDUCT
+# Code of Conduct
 
 Orange County R Users Group (OCRUG) is dedicated to providing a harassment-free experience for everyone. We do not tolerate harassment of participants in any form.
 
