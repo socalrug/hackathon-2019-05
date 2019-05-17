@@ -36,7 +36,8 @@ This event is open to data scientists, enthusiasts and hackers of all levels, fr
     * SB1 3100 - break out room - meeting room
     * SB1 3104 - break out room - meeting room
     * SB1 3107 - break out room - quite room
-    * SB1 3313 - break out room - meals and storage
+    * SB1 3313 - break out room - storage
+    * SB1 3rd floor patio - meals
 
 **Registration**
 
@@ -51,29 +52,35 @@ This event is open to data scientists, enthusiasts and hackers of all levels, fr
 
 | Time | Event |
 | :--: | :--   |
-| 08:30 AM - 09:00 AM | Registration and breakfast                      |
+| 08:30 AM            | Registration starts                             |
+| 08:30 AM - 09:00    | Breakfast                                       |
 | 09:00 AM – 09:45 AM | Tutorial - Data manipulation with tidy tools    |
 | 09:45 AM - 10:30 AM | Tutorial - Data visualization with ggplot2      |
 | 10:30 AM - 10:45 AM | Break                                           |
 | 10:45 AM - 11:30 AM | Tutorial - Data modelling with caret            |
 | 11:30 AM - 12:30 PM | Tutorial - Using the AWS Console                |
 | 12:30 PM – 01:00 PM | Lunch                                           |
-| 01:00 PM – 01:30 PM | Data set released, Data overview, groups formed |
+| 01:00 PM            | Registration closes                             |
+| 01:00 PM – 01:30 PM | Welcome talk, data set overview, groups formed  |
 | 01:30 PM – 05:30 PM | Working Session                                 |
-| 05:30 PM – 07:00 PM | Dinner & Discussion Session                     |
+| 05:30 PM – 06:00 PM | Dinner                                          |
+| 06:00 PM – 07:00 PM | Discussion Session                              |
 | 07:00 PM - 10:00 PM | Working Session                                 |
+| 10:00 PM            | Building automatically locks                    |
 
 ### Sunday
 
 | Time | Event |
 | :--: | :--   |
-| 08:30 AM - 09:00 AM | Breakfast                         |
-| 09:00 AM – 12:00 PM | Working session                   |
-| 12:00 PM – 01:00 PM | Lunch                             |
-| 01:00 PM – 02:00 PM | Groups prepare presentations      |
-| 02:00 PM – 03:00 PM | Group presentations (5 min each)  |
+| 08:30 AM - 09:00 AM | Breakfast | 
+| 09:00 AM – 12:00 PM | Working session |
+| 12:00 PM            | Most Helpful Person Award voting opens |
+| 12:00 PM – 01:00 PM | Lunch  |
+| 01:00 PM – 02:00 PM | Groups prepare presentationsl |
+| 02:00 PM            | Voting for Most Helpful Person Award closes |
+| 02:00 PM – 03:00 PM | Group presentations |
 | 03:00 PM – 03:30 PM | Judges discuss and select winners |
-| 03:30 PM – 04:00 PM | Award presentation & wrap-up      |
+| 03:30 PM – 04:00 PM | Award presentation & wrap-up |
 
 
 ## Rules
@@ -99,7 +106,11 @@ OCRUG GitHub Repo: [https://github.com/ocrug/](https://github.com/ocrug/)
 
 **Please install git and clone the following repo before the event and pull before the start of the event**
 
-command: git clone git@github.com:ocrug/hackathon-2019.git
+command: 
+
+```
+git clone git@github.com:ocrug/hackathon-2019.git
+```
 
 Hackathon Repo: [https://github.com/ocrug/hackathon-2019](https://github.com/ocrug/hackathon-2019)
 
@@ -116,6 +127,10 @@ Once you have an account, sign in (you can do it on a web browser or download an
 Slack channel: [https://ocrug.slack.com](https://ocrug.slack.com)
 
 The channel for the hackathon is **hackathon-2019**
+
+## Twitter
+
+Please follow us on twitter, oc_rug, and also tweet about the event with the hash tag #OCRUG
 
 ## Teams
 
