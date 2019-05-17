@@ -167,6 +167,11 @@ Below is a list of the awards and prizes that may be given out.
 * Early-bird registration
     * 1-month membership to [DataCamp](https://www.datacamp.com/)
 
+## Most Helpful Person
+
+The award for 'most helpful person' will be decided by a vote among participants. Each participant will be given 10 votes that they can reward other participants for being helpful. Voting for oneself or team members is not allowed. The person with the most votes win. We will be using a website where people will get an email to be able to vote.
+
+
 ## Resources
 
 * [RStudio Cheat Sheets](https://www.rstudio.com/resources/cheatsheets/)
