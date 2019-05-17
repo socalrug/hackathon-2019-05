@@ -76,7 +76,7 @@ This event is open to data scientists, enthusiasts and hackers of all levels, fr
 | 09:00 AM – 12:00 PM | Working session |
 | 12:00 PM            | Most Helpful Person Award voting opens |
 | 12:00 PM – 01:00 PM | Lunch  |
-| 01:00 PM – 02:00 PM | Groups prepare presentationsl |
+| 01:00 PM – 02:00 PM | Groups prepare presentations |
 | 02:00 PM            | Voting for Most Helpful Person Award closes |
 | 02:00 PM – 03:00 PM | Group presentations |
 | 03:00 PM – 03:30 PM | Judges discuss and select winners |
@@ -167,10 +167,27 @@ Below is a list of the awards and prizes that may be given out.
 * Early-bird registration
     * 1-month membership to [DataCamp](https://www.datacamp.com/)
 
-## Most Helpful Person
+## Most Helpful Person Award
 
-The award for 'most helpful person' will be decided by a vote among participants. Each participant will be given 10 votes that they can reward other participants for being helpful. Voting for oneself or team members is not allowed. The person with the most votes win. We will be using a website where people will get an email to be able to vote.
+The award for Most Helpful Person Award will be decided by using [cumulative voting](https://en.wikipedia.org/wiki/Cumulative_voting) system. In this system, each participant is given
+10 votes that they can reward other participants for being helpful.  You can assign multiple points to multiple people. Voting for oneself or one's team members is prohibited. The idea
+is to award points to individuals on other teams. The person with the most overall votes wins. When voting opens, you will receive an email with a link to a website. Use the link to cast
+your votes. You will need to vote before voting closes at 2:00 PM on Sunday.
 
+## Saturday Discussion Session
+
+There will be a discussion session Saturday between 6:00 PM and 7:00 PM. The goal is to allow sharing of ideas, knowledge and inspiration between groups. At the top of the hour each team 
+will be presented with a "bingo card" with the names of all the teams on in. The objective is to visit with as many teams as possible to allow cross pollination of ideas and knowledge.
+Team-members will visit another teams to hear about what they are doing and share thoughts. Not all team-members need to visit all teams but you should try to visit as many as possible.
+Having multiple team-members visit the same team is a good idea.
+
+To make this session run as smooth as possible please
+
+* Have at least one person stay back to talk to incoming participants from other teams. You can have multiple presentors from your team show your work.
+* Plan a 2-3 min talk explaining what you have been doing. Share your ideas, insights and thoughts. Also, share your problems and ask for solutions.
+* Allow for multiple participants to take part of the conversation at any given group discussion.
+* Follow the [Pac-man Rule](https://www.ericholscher.com/blog/2017/aug/2/pacman-rule-conferences/) so that others can be included.
+* Remember that the hackathon is primarily an education event and sharing of ideas is highly encouraged.
 
 ## Resources
 
