@@ -52,29 +52,35 @@ This event is open to data scientists, enthusiasts and hackers of all levels, fr
 
 | Time | Event |
 | :--: | :--   |
-| 08:30 AM - 09:00 AM | Registration and breakfast                      |
+| 08:30 AM            | Registration starts                             |
+| 08:30 AM - 09:00    | Breakfast                                       |
 | 09:00 AM – 09:45 AM | Tutorial - Data manipulation with tidy tools    |
 | 09:45 AM - 10:30 AM | Tutorial - Data visualization with ggplot2      |
 | 10:30 AM - 10:45 AM | Break                                           |
 | 10:45 AM - 11:30 AM | Tutorial - Data modelling with caret            |
 | 11:30 AM - 12:30 PM | Tutorial - Using the AWS Console                |
 | 12:30 PM – 01:00 PM | Lunch                                           |
+| 01:00 PM            | Registration closes                             |
 | 01:00 PM – 01:30 PM | Welcome talk, data set overview, groups formed  |
 | 01:30 PM – 05:30 PM | Working Session                                 |
-| 05:30 PM – 07:00 PM | Dinner & Discussion Session                     |
+| 05:30 PM – 06:00 PM | Dinner                                          |
+| 06:00 PM – 07:00 PM | Discussion Session                              |
 | 07:00 PM - 10:00 PM | Working Session                                 |
+| 10:00 PM            | Building automatically locks                    |
 
 ### Sunday
 
 | Time | Event |
 | :--: | :--   |
-| 08:30 AM - 09:00 AM | Breakfast                         |
-| 09:00 AM – 12:00 PM | Working session                   |
-| 12:00 PM – 01:00 PM | Lunch                             |
-| 01:00 PM – 02:00 PM | Groups prepare presentations      |
-| 02:00 PM – 03:00 PM | Group presentations (5 min each)  |
+| 08:30 AM - 09:00 AM | Breakfast | 
+| 09:00 AM – 12:00 PM | Working session |
+| 12:00 PM            | Most Helpful Person Award voting opens |
+| 12:00 PM – 01:00 PM | Lunch  |
+| 01:00 PM – 02:00 PM | Groups prepare presentationsl |
+| 02:00 PM            | Voting for Most Helpful Person Award closes |
+| 02:00 PM – 03:00 PM | Group presentations |
 | 03:00 PM – 03:30 PM | Judges discuss and select winners |
-| 03:30 PM – 04:00 PM | Award presentation & wrap-up      |
+| 03:30 PM – 04:00 PM | Award presentation & wrap-up |
 
 
 ## Rules
@@ -122,6 +128,10 @@ Slack channel: [https://ocrug.slack.com](https://ocrug.slack.com)
 
 The channel for the hackathon is **hackathon-2019**
 
+## Twitter
+
+Please follow us on twitter, oc_rug, and also tweet about the event with the hash tag #OCRUG
+
 ## Teams
 
 * All participants will work on teams between 2 and 5 people.
@@ -156,6 +166,11 @@ Below is a list of the awards and prizes that may be given out.
     * [$30 of AWS credits](https://github.com/ocrug/hackathon-2019/blob/master/AWS_credits.md)
 * Early-bird registration
     * 1-month membership to [DataCamp](https://www.datacamp.com/)
+
+## Most Helpful Person
+
+The award for 'most helpful person' will be decided by a vote among participants. Each participant will be given 10 votes that they can reward other participants for being helpful. Voting for oneself or team members is not allowed. The person with the most votes win. We will be using a website where people will get an email to be able to vote.
+
 
 ## Resources
 
