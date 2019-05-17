@@ -21,6 +21,7 @@ https://s3.us-east-2.amazonaws.com/ocrug-hackathon-2019/data/03_periodic-groundw
 https://s3.us-east-2.amazonaws.com/ocrug-hackathon-2019/data/03_periodic-groundwater-level-measurements/metadata.txt
 https://s3.us-east-2.amazonaws.com/ocrug-hackathon-2019/data/03_periodic-groundwater-level-measurements/perforations.csv
 https://s3.us-east-2.amazonaws.com/ocrug-hackathon-2019/data/03_periodic-groundwater-level-measurements/stations.csv
+https://s3.us-east-2.amazonaws.com/ocrug-hackathon-2019/data/03_periodic-groundwater-level-measurements/measurements.csv
 
 Water Regulatory Information
 https://s3.us-east-2.amazonaws.com/ocrug-hackathon-2019/data/04_water-regulatory-information/HR2W_Data_Dictionary_0_0.pdf
