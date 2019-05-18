@@ -218,6 +218,14 @@ To make this session run as smooth as possible please
 * [R Graphics Cookbook](https://r-graphics.org/)
     * A practical guide that provides more than 150 recipes
 
+* [Mistakes, we’ve drawn a few: Learning from our errors in data visualisation](https://medium.economist.com/mistakes-weve-drawn-a-few-8cdd8a42d368)
+    * From the Economist about mistakes they've made with *published* data visualizations, and how they'd fix the problems.
+    * Note: even professionals make mistakes too!
+
+* [The caret R Package Site](http://topepo.github.io/caret/index.html)
+    * Good overview of caret with code examples
+    * In particular, check out the [table of available models](http://topepo.github.io/caret/available-models.html)
+
 
 ## Food
 
