@@ -32,7 +32,7 @@ This event is open to data scientists, enthusiasts and hackers of all levels, fr
 * [Google Maps](https://www.google.com/maps/place/The+Paul+Merage+School+of+Business/@33.6468381,-117.8402619,17z/data=!3m1!4b1!4m5!3m4!1s0x80dcde0edc8d16f9:0x42b754c2a210a0e0!8m2!3d33.6468337!4d-117.8380732)
 * [Directions & Parking Information](https://github.com/ocrug/hackathon-2019/blob/master/parking/Parking%20and%20Building%20Location.pdf)
 * Rooms
-    * SB1 2301 - Main event room
+    * SB1 2321 - Main event room
     * SB1 3100 - break out room - meeting room
     * SB1 3104 - break out room - meeting room
     * SB1 3107 - break out room - quite room
