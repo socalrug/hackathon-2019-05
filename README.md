@@ -226,6 +226,11 @@ To make this session run as smooth as possible please
     * Good overview of caret with code examples
     * In particular, check out the [table of available models](http://topepo.github.io/caret/available-models.html)
 
+* [DALEX R Package -- Descriptive mAchine Learning EXplanations](https://github.com/pbiecek/DALEX)
+    * Provides a set of tools that help you to understand how complex models are working
+    * Helps you visualize what's going on
+    * Check out the [cheatsheet](https://github.com/pbiecek/DALEX/blob/master/misc/DALEX_local.png)
+
 
 ## Food
 
