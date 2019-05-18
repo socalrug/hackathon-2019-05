@@ -399,3 +399,39 @@ Some support may be covered by your promotional credits. Please note that upfron
 * [RStudio](https://www.rstudio.com/)
 * [SuperDataScience](https://www.superdatascience.com/)
 * [UC Irvine - Paul Merage School of Business](https://merage.uci.edu/) 
+
+
+## Data
+
+This is an open data hackathon. Any and all puplicly avaliable data can be used as long as it adheres to the rules. Listed below is a handful of datasets that provides a good starting point. All of these datasets allong with data dictionaries are located in the data folder in this repository.
+
+### Dataset #1 - Drinking Water Watch - Public Water System Information
+[Open Data Format](https://data.ca.gov/dataset/drinking-water-public-water-system-information)
+
+List of Active Public Water Systems (PWS) in California. It includes basic information such as population served, number of connections, county, etc. This data also have a [public portal](https://sdwis.waterboards.ca.gov/PDWW/). 
+
+### Dataset #2 - California Population Projection by County, Age, Gender and Ethnicity
+[Open Data Format](https://data.ca.gov/dataset/california-population-projection-county-age-gender-and-ethnicity)
+
+California county population projections by age, gender and ethnicity for 1970-2050, developed by the CA Department of Finance. Last updated 2018-05-23.
+
+### Dataset #3 - Periodic Groundwater Level Measurements
+[Open Data Format](https://data.cnra.ca.gov/dataset/periodic-groundwater-level-measurements)
+
+The DWR Periodic Groundwater Levels dataset contains seasonal and long-term groundwater level measurements collected by the Department of Water Resources and cooperating agencies in groundwater basins statewide. It also includes data collected through the CASGEM (California Statewide Groundwater Elevation Monitoring) Program. Most measurements are taken manually twice per year to capture the peak high and low values in groundwater elevations. However, the dataset also includes measurements recorded more frequently, monthly, weekly, or daily.
+
+### Dataset #4 - Human Right to Water Regulatory
+[Open Data Format](https://data.ca.gov/dataset/drinking-water-human-right-water-regulatory-including-enforcement-actions-information)
+
+This dataset includes public water systems (PWS) compliance status regarding violations.
+
+[Frequently Asked Questions](https://www.waterboards.ca.gov/water_issues/programs/hr2w/docs/general/faqs_10-9-2018.pdf)
+
+### Additional datasets
+
+- [California Open Data Portal](https://data.ca.gov/)
+- [Water related datasets](https://data.ca.gov/search/field_topic/water-46)
+- [U.S. Governments open data](https://www.data.gov/)
+- [California Natural Resources Agency Open Data](https://data.cnra.ca.gov/)
+- [Nartional Water Quality Monitoring Council](https://www.waterqualitydata.us/)
+- [ Safe Drinking Water Challenge - Datasets](https://docs.google.com/spreadsheets/d/1NhC1WyYVj2K4N-JpoYQk_7W0ZAbDInjmiYirHUkBaOE/edit#gid=0)

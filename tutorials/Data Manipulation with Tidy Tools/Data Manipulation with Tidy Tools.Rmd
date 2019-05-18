@@ -1,0 +1,816 @@
+---
+title: "<br>Data Manipulation with Tidy Tools"
+author: "Alyssa Columbus"
+date: 'May 18, 2019'
+output:
+  html_document:
+    number_sections: true
+    toc: true
+    toc_float:
+      toc_collapsed: false
+    code_folding: show
+    code_download: true
+    df_print: paged
+    fig_caption: true
+    css: styles.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Prerequisites
+Before you get started, make sure you have [all tutorial materials](https://github.com/acolum/conference-presentations/tree/master/Data%20Manipulation%20with%20Tidy%20Tools){target="_blank"} downloaded and [R](https://www.r-project.org/){target="_blank"} and [RStudio](https://www.rstudio.com/){target="_blank"} installed on your machine. If you don't have these installed on your machine, the following are instructions for you to install this software.
+
+## Installing R
+R is a powerful, open-source statistical programming language that anyone can download for free! You can simply go to [CRAN's website](https://www.r-project.org/){target="_blank"} and install R by following these steps:
+
+### Under the 'Download' heading, select 'CRAN'
+![](img/CRAN.png)
+
+### Install a CRAN Mirror
+
+Install the CRAN mirror that's nearest to your geographic location. For example, if you live in Orange County, California, you should install the [UCLA CRAN Mirror.](http://cran.stat.ucla.edu/){target="_blank"}
+
+### Install your Machine's Version of R
+![](img/DownloadR.png)
+
+#### R for Windows
+![Install R for the first time.](img/WindowsR1.png)
+
+![After you click this link, follow the instructions given in the installation.](img/WindowsR2.png)
+
+#### R for (Mac) OS X
+![After you click this link, follow the instructions given in the installation.](img/MacR1.png)
+
+#### R for Linux
+![Install the R version relevant to your Linux server, and follow the instructions given in the installation.](img/LinuxR1.png)
+
+## Installing RStudio
+RStudio is an open-source professional software that makes R much easier to use. Download the free, open-source license version from [RStudio's website](https://www.rstudio.com/products/rstudio/download/#download){target="_blank"}. The installation steps are very similar to those of R's for all operating systems.
+
+## Updating R and RStudio
+If the aforementioned packages and functions start to not work after an extended period of time, you may need to update your versions of R, R packages, and RStudio software to the latest versions.
+
+### Updating R
+To update your version of R, first close any R or RStudio windows you have open.
+
+#### Updating R on Windows
+Open the R GUI (x64, not i386). This is **not** the same as RStudio. The R GUI program icon should look very similar to this:
+
+![](img/RGui.png)
+
+
+Install the `installr` package into R by typing
+
+```{r, eval=FALSE}
+install.packages("installr")
+```  
+
+into the Console.
+
+After the package is finished installing, call the package by typing 
+
+```{r, eval=FALSE} 
+library(installr)
+``` 
+
+into the Console. You can now update your R software and packages to the latest versions by typing 
+
+```{r, eval=FALSE}
+updateR() 
+```
+
+into the Console. Then R will walk you through a detailed and intuitive process of updating your R software and packages to the latest versions.
+
+#### Updating R on (Mac) OS X
+
+Open RStudio again, and type the following lines of code into the Console:
+
+```{r, eval=FALSE}
+install.packages('devtools') #assuming it isn't already installed
+library(devtools)
+install_github('andreacirilloac/updateR')
+library(updateR)
+updateR(admin_password = "os_admin_user_password")
+```
+
+R will then walk you through a detailed and intuitive process of updating your R software and packages to the latest versions.
+
+#### Updating R on Linux
+
+[This resource](https://stackoverflow.com/questions/10476713/how-to-upgrade-r-in-ubuntu) will walk you through how to update your R software and packages to the latest versions on Linux.
+
+### Updating R Packages Without Updating R
+
+Updating out-of-date packages that were installed from CRAN (with `install.packages()`) is easy with the `update.packages()` function. Type this function into the RStudio Console.
+
+```{r, eval=FALSE}
+update.packages()
+```
+
+After entering this function, it will ask you what packages you want to update. To update all packages at once, use `ask = FALSE`.
+
+```{r, eval=FALSE}
+update.packages(ask = FALSE)
+```
+
+To update packages installed from `devtools::install_github()`, type the following function into your RStudio Console (I would also recommend saving this function in an R Script for later use):
+
+```{r, eval=FALSE}
+update_github_pkgs <- function() {
+  # check/load necessary packages
+  # devtools package
+  if (!("package:devtools" %in% search())) {
+    tryCatch(require(devtools), error = function(x) {warning(x); cat("Cannot load devtools package \n")})
+    on.exit(detach("package:devtools", unload=TRUE))
+  }
+
+  pkgs <- installed.packages(fields = "RemoteType")
+  github_pkgs <- pkgs[pkgs[, "RemoteType"] %in% "github", "Package"]
+
+  print(github_pkgs)
+  lapply(github_pkgs, function(pac) {
+    message("Updating ", pac, " from GitHub...")
+
+    repo = packageDescription(pac, fields = "GithubRepo")
+    username = packageDescription(pac, fields = "GithubUsername")
+
+    install_github(repo = paste0(username, "/", repo))
+  })
+}
+```
+
+Then call the function.
+
+```{r, eval=FALSE}
+update_github_pkgs()
+```
+
+### Updating RStudio
+To update RStudio, open RStudio and go to `Help > Check for Updates` to install the newest version.
+
+# Data Types
+
+R has a wide variety of data types including vectors (numerical, character, logical), matrices, lists, and data frames. Matrices are composed of vectors, and data frames are composed of lists.
+
+## Vectors
+
+```{r}
+a <- c(1,2,5.3,6,-2,4) # numeric vector
+b <- c("one","two","three") # character vector
+c <- c(TRUE,TRUE,TRUE,FALSE,TRUE,FALSE) #logical vector
+```
+
+You can refer to elements of a vector using subscripts.
+
+```{r}
+a[c(2,4)] # 2nd and 4th elements of vector
+```
+
+## Matrices
+
+All columns in a matrix must have the same mode (numeric, character, etc.) and the same length. The general format is
+
+```{r, eval = F}
+mymatrix <- matrix(vector, nrow=r, ncol=c, byrow=FALSE,
+   dimnames=list(char_vector_rownames, char_vector_colnames))
+```
+
+`byrow=TRUE` indicates that the matrix should be filled by rows. `byrow=FALSE` indicates that the matrix should be filled by columns (the default). dimnames provides optional labels for the columns and rows.
+
+```{r}
+# generates 5 x 4 numeric matrix
+x <- matrix(1:20, nrow=5,ncol=4)
+
+# another example
+cells <- c(1,26,24,68)
+rnames <- c("R1", "R2")
+cnames <- c("C1", "C2")
+mymatrix <- matrix(cells, nrow=2, ncol=2, byrow=TRUE,
+  dimnames=list(rnames, cnames))
+```
+
+Like in vectors, you can identify rows, columns or elements using subscripts.
+
+```{r}
+x[,4] # 4th column of matrix
+x[3,] # 3rd row of matrix
+x[2:4,1:3] # rows 2,3,4 of columns 1,2,3
+```
+
+## Lists
+
+An ordered collection of objects (components). A list allows you to gather a variety of (possibly unrelated) objects under one name.
+
+```{r}
+# example of a list with 4 components -
+# a string, a numeric vector, a matrix, and a scalar
+list1 <- list(name="Fred", mynumbers=a, mymatrix=x, age=5.3)
+list2 <- list(character="Louise", show="Bob's Burgers", time=830)
+
+# example of a list containing two lists
+ultimate_list <- c(list1,list2)
+```
+
+Identify elements of a list using the [[]] convention.
+
+```{r}
+ultimate_list[[2]] # 2nd component of the list
+ultimate_list[["mynumbers"]] # component named mynumbers in list
+```
+
+## Data Frames
+
+A data frame is more general than a matrix, in that different columns can have different modes (numeric, character, factor, etc.). This is similar to SAS and SPSS datasets.
+
+```{r}
+d <- c(1,2,3,4)
+e <- c("red", "white", "red", NA)
+f <- c(TRUE,TRUE,TRUE,FALSE)
+mydata <- data.frame(d,e,f)
+names(mydata) <- c("ID","Color","Passed") # variable names
+```
+
+There are a variety of ways to identify the elements of a data frame.
+
+```{r}
+mydata[2:3] # columns 2,3 of data frame
+mydata[c("ID","Passed")] # columns ID and Passed from data frame
+mydata$Color # variable Color in the data frame
+```
+
+## Useful Functions for All Data Types
+
+```{r, eval = F}
+length(object) # number of elements or components
+str(object)    # structure of an object
+class(object)  # class or type of an object
+names(object)  # names
+
+c(object,object,...)       # combine objects into a vector
+cbind(object, object, ...) # combine objects as columns
+rbind(object, object, ...) # combine objects as rows
+
+object     # prints the object
+
+ls()       # list current objects
+rm(object) # delete an object
+
+newobject <- edit(object) # edit copy and save as newobject
+fix(object)               # edit in place 
+```
+
+# Importing and Working with Data
+
+## Reading in the Dataset
+
+Today, we're going to be using one of the over 40,000 open datasets available in [NASA's Open Data Repository](https://data.nasa.gov/Space-Science/Meteorite-Landings/gh4g-9sfh){target="_blank"}. This "Meteorite Landings" dataset is from the Meteoritical Soceity and contains information on *all* of the known meteorite landings, going as far back as the early 1800's.
+
+This data can be downloaded [at this link](https://github.com/acolum/conference-presentations/raw/master/Data%20Manipulation%20with%20Tidy%20Tools/data/Meteorite_Landings.csv){target="_blank"}.
+
+To read in our data (.csv) file, we can use the following command:
+
+```{r}
+meteorite_landings <- read.csv("data/Meteorite_Landings.csv")
+```
+
+**Note 1:** The syntax above assumes the .csv file is saved to the working directory. To change the working directory, navigate to `Session` > `Set Working Directory` > `Choose Working Directory` or type `setwd("C:/Users/path")` into the Console.
+
+**Note 2:** `read.csv` reads the file, but we can't use the data unless we assign it to a variable. We can think of a variable as a container with a name, such as x, current_temperature, or subject_id that contains one or more values. We can create a new variable in R and assign a value to it using `<-`.
+
+Once you run the above command, you should see a `meteorite_landings` object in the "Environment" box in the top right corner of RStudio.
+
+Now, let's explore the dataset.
+
+## Viewing the Dataset
+
+If we want to view our entire dataset, we can type `View(meteorite_landings)` into the Console. However, for large data sets it is much faster and more convenient to use the function `head` to display only the first few rows of data.
+
+```{r}
+head(meteorite_landings)
+```
+
+### Structure
+
+To view the structure of, or data types for, each variable in a dataset, use the `str`, or "structure" function.
+
+```{r}
+str(meteorite_landings)
+```
+
+#### Data Types
+
+Note that `meteorite_landings` is a data frame. You can think of this structure as a spreadsheet in MS Excel. Data frames are very useful for storing data, and you will use them frequently when programming in R. A typical data frame of experimental data contains individual observations in rows and variables in columns. Also note that there are 2 different data types in our dataset:
+
+1. **Factor** - A Class (not a string or number!)
+
+2. **Num** - Numeric, float/number than can include decimal places
+
+### Dimensions
+
+We can see the shape, or dimensions, of the data frame with the function `dim`:
+
+```{r}
+dim(meteorite_landings)
+```
+
+This tells us that our data frame, `meteorite_landings`, has 45,716 rows and 10 columns.
+
+#### Indexing
+
+If we want to get a single value from the data frame, we can provide an index in square brackets. The first number specifies the row and the second the column:
+
+```{r}
+# first value in meteorite_landings, row 1, column 1
+meteorite_landings[1, 1]
+
+# middle value in meteorite_landings, row 22858, column 5
+meteorite_landings[22858, 5]
+```
+
+#### Subsetting
+
+If we want to select more than one row or column, we can use the function `c`, which stands for combine. For example, to pick columns 1 and 5 from rows 1, 3, and 5, we can do this:
+
+```{r}
+meteorite_landings[c(1, 3, 5), c(1, 5)]
+```
+
+We frequently want to select contiguous rows or columns, such as the first ten rows, or columns 3 through 7. You can use `c` for this, but it's more convenient to use the `:` operator. This special function generates sequences of numbers:
+
+```{r}
+1:5
+
+3:12
+```
+
+For example, we can select the first 2 columns of values for the first four rows like this:
+
+```{r}
+meteorite_landings[1:4, 1:2]
+```
+
+or the first 5 columns of rows 5 to 10 like this:
+
+```{r}
+meteorite_landings[5:10, 1:5]
+```
+
+If you want to select all rows or all columns, leave that index value empty.
+
+```{r}
+# All columns from row 5
+meteorite_landings[5, ]
+
+# All rows from columns 6-8
+meteorite_landings[, 6:8]
+```
+
+If you leave both index values empty (i.e., `meteorite_landings[,]`), you get the entire data frame.
+
+## Mathematical Operations
+
+Now let's perform some common mathematical operations to learn more about our meteorite data. When analyzing data we often want to look at partial statistics, such as the maximum value per id or the average value per year. One way to do this is to select the data we want to create a new temporary data frame, and then perform the calculation on this subset:
+
+```{r}
+# first 5 rows, columns 1,5
+first_fifty_meteors <- meteorite_landings[1:50, 5]
+# max mass of first 50 meteors
+max(first_fifty_meteors, na.rm = T)
+
+# also correct:
+max(meteorite_landings[1:50, 5], na.rm = T)
+```
+
+R also has functions for other common calculations, e.g. finding the minimum, mean, median, and standard deviation of the data:
+
+```{r}
+# minimum mass of first 50 meteors
+min(first_fifty_meteors, na.rm = T)
+
+# mean mass of first 50 meteors
+mean(first_fifty_meteors, na.rm = T)
+
+# median mass of first 50 meteors
+median(first_fifty_meteors, na.rm = T)
+
+# standard deviation of the mass of the first 50 meteors
+sd(first_fifty_meteors, na.rm = T)
+```
+
+R also has a function that summaries the previous common calculations. For every column in the data frame, the function `summary` calculates: the minimum value, the first quartile, the median, the mean, the third quartile, and the max value, giving helpful details about the sample distribution.
+
+```{r}
+# Summarize function
+summary(meteorite_landings)
+```
+
+# Manipulating and sorting dataframes with `dplyr`
+
+## What is `dplyr`?
+
+`dplyr` is an R package in the `tidyverse` that aims to make data wrangling/cleaning/manipulation more human-readable. The `dplyr` package makes these steps fast and easy:
+
+* By constraining your options, it helps you think about your data manipulation challenges.
+
+* It provides simple "verbs", functions that correspond to the most common data manipulation tasks, to help you translate your thoughts into code.
+
+* It uses efficient backends, so you spend less time waiting for the computer.
+
+This tutorial introduces you to `dplyr`'s basic set of tools, and shows you how to apply them to data frames. Aside from this tutorial, a helpful resource for getting familiar with `dplyr` is [this comprehensive RStudio cheatsheet.](https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf){target="_blank"}
+
+**Side Note:** `dplyr` also supports databases via the `dbplyr` package. Once you install `dbplyr`, you can read `vignette("dbplyr")` to learn more.
+
+## Getting Started with `dplyr`
+
+If you don't already have `dplyr` or the `tidyverse` installed, you can install the `dplyr` package by typing the following command into the Console:
+
+```{r, eval = F}
+install.packages("dplyr")
+```
+
+Once you have `dplyr` installed, load it into your R session with 
+
+```{r}
+library(dplyr)
+```
+
+`dplyr` aims to provide a function for each basic verb of data manipulation:
+
+| Function | Purpose |
+|---------------------|------------------------------------------------|
+| `filter()` | to select cases based on their values |
+| `arrange()` | to reorder the cases |
+| `select()`, `rename()` | to select variables based on their names |
+| `mutate()`, `transmute()` | to add new variables that are functions of existing variables |
+| `summarise()` | to condense multiple values to a single value |
+| `sample_n()`, `sample_frac()` | to take random samples |
+    
+In this tutorial, we'll spend some time working with each individual function.
+
+### Piping Operator (`%>%`)
+
+The operators `%>%` pipe their left-hand side values forward into expressions that appear on the right-hand side, i.e. one can replace f(x) with x `%>%` f(), where `%>%` is the (main) pipe-operator. When coupling several function calls with the pipe-operator, the benefit will become more apparent. Consider this pseudo example:
+
+```{r, eval = F}
+the_data <- read.csv('/path/to/data/file.csv') %>%
+  subset(variable_a > x) %>%
+  transform(variable_c = variable_a/variable_b) %>%
+  head(100)
+```
+
+Four operations are performed to arrive at the desired data set, and they are written in a natural order: the same as the order of execution. Also, no temporary variables are needed. If yet another operation is required, it is straight-forward to add to the sequence of operations wherever it may be needed.
+
+## Filter rows with `filter()`
+
+`filter()` allows you to select a subset of rows in a data frame. Like all single verbs, the first argument is the data frame. The second and subsequent arguments refer to variables within that data frame, selecting rows where the expression is `TRUE`.
+
+For example, we can select all meteorites in the L5 class with mass greater than or equal to 10,000 grams with:
+
+```{r}
+meteorite_landings %>% 
+  filter(mass >= 10000 & recclass == "L5")
+```
+
+This is roughly equivalent to this base R code:
+
+```{r, eval = F}
+meteorite_landings[meteorite_landings$mass >= 10000 & meteorite_landings$recclass == "L5", ]
+```
+
+## Arrange rows with `arrange()`
+
+`arrange()` works similarly to `filter()` except that instead of filtering or selecting rows, it reorders them. It takes a data frame and a set of column names (or more complicated expressions) to order by. If you provide more than one column name, each additional column will be used to break ties in the values of preceding columns:
+
+```{r}
+meteorite_landings %>% 
+  arrange(reclat, reclong, mass)
+```
+
+Use `desc()` to order a column in descending order:
+
+```{r}
+meteorite_landings %>% 
+  arrange(desc(mass))
+```
+
+## Select columns with `select()`
+
+Often you work with large datasets with many columns but only a few are actually of interest to you. `select()` allows you to rapidly zoom in on a useful subset using operations that usually only work on numeric variable positions:
+
+```{r}
+# Select columns by name
+meteorite_landings %>% 
+  select(name, recclass, mass)
+
+# Select all columns between name and year (inclusive)
+meteorite_landings %>% 
+  select(name:year)
+
+# Select all columns except those from name to year (inclusive)
+meteorite_landings %>% 
+  select(-(name:year))
+```
+
+There are a number of helper functions you can use within `select()`, like `starts_with()`, `ends_with()`, `matches()` and `contains()`. These let you quickly match larger blocks of variables that meet some criterion. See `?select` for more details.
+
+You can rename variables with `select()` by using named arguments:
+
+```{r}
+meteorite_landings %>% 
+  select(mass_g = mass)
+```
+
+But because `select()` drops all the variables not explicitly mentioned, it's not that useful. Instead, use `rename()`:
+
+```{r}
+meteorite_landings %>% 
+  rename(mass_g = mass)
+```
+
+## Add new columns with `mutate()`
+
+Besides selecting sets of existing columns, it's often useful to add new columns that are functions of existing columns. This is the job of `mutate()`:
+
+```{r}
+meteorite_landings %>% 
+  mutate(mass_kg = mass/1000)
+```
+
+`dplyr::mutate()` is similar to the base `transform()`, but allows you to refer to columns that you've just created.
+
+If you only want to keep the new variables, use `transmute()`:
+
+```{r}
+meteorite_landings %>% 
+  transmute(mass_kg = mass/1000)
+```
+
+## Summarise values with `summarise()`
+
+The last verb is `summarise()`. It collapses a data frame to a single row.
+
+```{r}
+meteorite_landings %>% 
+  summarise(mean_mass = mean(mass, na.rm = T))
+```
+
+It's not that useful until we learn the `group_by()` verb below.
+
+```{r}
+meteorite_landings %>% 
+  group_by(recclass) %>% 
+  summarise(mean_mass = mean(mass, na.rm = T))
+```
+
+## Randomly sample rows with `sample_n()` and `sample_frac()`
+
+You can use `sample_n()` and `sample_frac()` to take a random sample of rows: use `sample_n()` for a fixed number and `sample_frac()` for a fixed fraction.
+
+```{r}
+meteorite_landings %>% 
+  sample_n(10)
+
+meteorite_landings %>% 
+  sample_frac(0.01)
+```
+
+Use `replace = TRUE` to perform a bootstrap sample. If needed, you can weight the sample with the `weight` argument.
+
+## Ten `dplyr` Tricks!
+
+### Are you often selecting the same columns over and over again?
+
+You can make a vector of pre-identified columns once and then refer to them using `one_of()` or `!!` (even shorter).
+
+```{r}
+library(dplyr)
+
+cols <- c("name", "reclat", "reclong")
+
+ex1 <- meteorite_landings %>% 
+  select(!!cols)
+
+head(ex1)
+```
+
+### Select columns via regex
+
+If you have matching patterns, you can use `starts_with()`, `contains()`, or `ends_with`. But what if your pattern isn't that exact? Simple: enter regex into `matches()`.
+
+```{r}
+library(dplyr)
+
+ex2 <- iris %>% 
+  select(matches("S.+th"))
+
+head(ex2)
+```
+
+### Reordering your columns
+
+If you just want to bring one or more columns to the front, you can use `everything()` to add all the remaining columns.
+
+```{r}
+library(dplyr)
+
+ex3 <- meteorite_landings %>% 
+  select(id, everything())
+
+head(ex3)
+```
+
+### Renaming all variables in one go
+
+One command to get them all in lower case, and one more to replace "..g." in the `mass` variable.
+
+```{r}
+library(dplyr)
+library(stringr)
+
+ex4 <- meteorite_landings %>% 
+  rename_all(tolower) %>% 
+  rename_all(~str_replace(., "..g.", ""))
+
+head(ex4)
+```
+
+### Cleaning up your observations in one go
+
+The `select_all/if/at` and `rename_all/if/at` functions will only modify the variable names, not the observations. If you want to change those, use the `mutate` variant.
+
+```{r}
+library(dplyr)
+library(stringr)
+
+ex5 <- meteorite_landings %>% 
+  select(name, nametype, fall) %>% 
+  mutate_all(tolower) %>% 
+  mutate_all(~str_replace_all(., " ", "_"))
+
+head(ex5)
+```
+
+### Finding the 5 highest/lowest values
+
+You can use `top_n` to find the 5 meteorites with the highest mass without ordering them first.
+
+```{r}
+library(dplyr)
+
+meteorite_landings %>% 
+  top_n(5, mass)
+```
+
+### Adding the amount of observations
+
+You can add the amount of observations without summarising them yourself. If you don't like the default column name `n`, you can change it again with a `rename()` statement.
+
+```{r}
+library(dplyr)
+
+ex7 <- meteorite_landings %>% 
+  add_count(recclass) %>% 
+  rename(n_recclass = n)
+
+head(ex7)
+```
+
+### Making new discrete variables
+
+`case_when()` can be a very powerful tool to make new discrete variables based on other columns.
+
+```{r}
+library(dplyr)
+
+ex8 <- starwars %>% 
+  select(name, species, homeworld, birth_year, hair_color) %>% 
+  mutate(new_group = case_when(
+    species == "Droid" ~ "Robot",
+    homeworld == "Tatooine" & hair_color == "blond" ~ "Blond Tatooinian",
+    homeworld == "Tatooine" ~ "Other Tatooinian",
+    hair_color == "blond" ~ "Blond non-Tatooinian",
+    TRUE ~ "Other Human"))
+
+head(ex8)
+```
+
+### Going rowwise...
+
+Mutating with aggregate functions by default will take the average/sum/... of the entire column. Via adding `rowwise()` you can aggregate within an observation.
+
+```{r}
+library(dplyr)
+
+ex9 <- iris %>% 
+  select(contains("Length")) %>% 
+  rowwise() %>% 
+  mutate(avg_length = mean(c(Petal.Length, Sepal.Length)))
+
+head(ex9)
+```
+
+### Changing your column names after `summarise_if`
+
+If you've used the `summarise_all/if/at` variants before, you know that the variable name by default does not get changed. If you want a modified name, you can wrap your function inside `funs()` and add a tag that will be added to the variable name.
+
+```{r}
+library(dplyr)
+
+iris %>% 
+  summarise_if(is.numeric, funs(avg = mean))
+```
+
+# Additional Resources
+
+## Helpful Packages To Get Started With
+
+To learn more about and read documentation for each of these packages, either type `?<packagename>` into your RStudio console or search `<packagename>` in the [CRAN repository](https://cran.r-project.org/web/packages/available_packages_by_name.html){target="_blank"}.
+
+- `blob` - for storing blob (binary) data
+- `boot` - bootstrap functions
+- `broom` - tidies statistical models into data frames
+- `caret` - streamlines the process for creating predictive models [(Helpful Website)](http://topepo.github.io/caret/index.html){target="_blank"}
+- `cluster` - clustering methods
+- `coefplot` - plots coefficients from fitted models
+- `data.table` - extension of data.frames
+- `devtools` - tools to make an R developer's life easier
+- `dplyr` - **part of the Tidyverse,** convenient data manipulation, munging, and cleaning in R
+- `forcats` - **part of the Tidyverse,** solves common problems with factors
+- `gbm` - gradient boosting models, can be integrated with `caret`
+- `ggplot2` - **part of the Tidyverse,** data visualization in R that follows the ["Grammar of Graphics"](https://www.amazon.com/Grammar-Graphics-Statistics-Computing/dp/0387245448){target="_blank"}
+- `glmnet` - lasso and elastic-net regularized GLMs, can be integrated with `caret`
+- `gridExtra` - miscellaneous functions for "grid" graphics
+- `hms` - for working with time-of-day values
+- `ISLR` - data for an "Introduction to Statistical Learning with Applications in R"
+- `lubridate` - for working with dates and date-times
+- `MASS` - functions and datasets for applied statistics
+- `pdp` - partial dependence plots
+- `pls` - partial least squares and principal component regression, can be integrated with `caret`
+- `plyr` - **part of the Tidyverse,** tools for split-apply-combine analyses
+- `pROC` - displays and analyzes ROC curves
+- `purrr` - **part of the Tidyverse,** enhances R's functional programming set of tools for working with functions and vectors
+- `randomForest` - random forest models, can be integrated with `caret`
+- `readr` - **part of the Tidyverse,** provides a fast and friendly way to read rectangular data
+- `readxl` - **part of the Tidyverse,**makes reading Excel files much easier
+- `rpart` - decision tree models, can be integrated with `caret`
+- `rpart.plot` - plotting of decision tree models
+- `stringr` - **part of the Tidyverse,** makes working with string objects much easier
+- `tibble` - **part of the Tidyverse,** creates data.frames that are easier to work with
+- `tidyr` - **part of the Tidyverse,** provides a set of functions to help you get to tidy data
+- `tidyverse` - **set of helpful packages for tidier data** [(Helpful Website)](http://tidyverse.org){target="_blank"}
+- `xgboost` - eXtreme Gradient Boosting models, can be integrated with `caret`
+
+## R and RStudio Resources
+
+### RStudio Cheatsheets
+
+[RStudio Cheatsheets](https://www.rstudio.com/resources/cheatsheets/){target="_blank"} can be downloaded from the RStudio IDE by navigating to `Help` > `Cheatsheets`. The most commonly-used cheatsheets include:
+
+- [RStudio IDE Cheat Sheet](https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf){target="_blank"}
+- [Data Import Cheat Sheet](https://github.com/rstudio/cheatsheets/raw/master/data-import.pdf){target="_blank"}
+- [Data Transformation with `dplyr`](https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf){target="_blank"}
+- [Data Visualization with `ggplot2`](https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf){target="_blank"}
+- [Dates and Times with `lubridate`](https://github.com/rstudio/cheatsheets/raw/master/lubridate.pdf){target="_blank"}
+- [String Manipulation with `stringr`](https://github.com/rstudio/cheatsheets/raw/master/strings.pdf){target="_blank"}
+- [Apply functions with `purrr`](https://github.com/rstudio/cheatsheets/raw/master/purrr.pdf){target="_blank"}
+
+### Helpful Links
+
+- [CRAN Intro to R Manual](https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf){target="_blank"}
+- [The R Graph Gallery](https://www.r-graph-gallery.com/){target="_blank"}
+- [Top 50 `ggplot2` visualizations](http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html){target="_blank"}
+
+### Google and Community
+
+- [Google and Try!](http://google.com){target="_blank"}
+- [RSeek.org (Google for R)](http://rseek.org){target="_blank"}
+- [OC R User Group](http://meetup.com/OC-RUG/){target="_blank"}
+- [R-Ladies Irvine](http://meetup.com/rladies-irvine/){target="_blank"}
+- [#rstats community on Twitter](http://twitter.com){target="_blank"}
+
+# Thank you for attending my tutorial on "Data Manipulation with Tidy Tools."
+
+All tutorial materials can be found [here on my GitHub.](https://github.com/acolum/conference-presentations/tree/master/Data%20Manipulation%20with%20Tidy%20Tools){target="_blank"}
+
+Thanks so much for listening and following along, and I hope you'll have a great rest of your hackathon!
+
+<hr />
+
+<center>
+
+A work by [Alyssa Columbus](https://alyssacolumbus.com/){target="_blank"}.
+
+*[hello@alyssacolumbus.com](mailto:hello@alyssacolumbus.com){target="_blank"}*
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+<p style="text-align: center;">
+<a href="https://alyssacolumbus.com/" class="fa fa-link" target="_blank"></a>
+<a href="https://twitter.com/alycolumbus?lang=en" class="fa fa-twitter" target="_blank"></a>
+<a href="https://www.linkedin.com/in/acolum/" class="fa fa-linkedin" target="_blank"></a>
+<a href="https://github.com/acolum/" class="fa fa-github" target="_blank"></a>
+</p>
+
+</center>

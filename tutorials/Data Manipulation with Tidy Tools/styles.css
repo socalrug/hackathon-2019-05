@@ -1,0 +1,55 @@
+h1.title {
+
+  font-size: 38px;
+
+  color: DarkBlue;
+
+  text-align: center;
+
+}
+
+h4.author {
+
+    font-size: 18px;
+
+ color: CornflowerBlue;
+
+  text-align: center;
+
+}
+
+h4.date {
+
+  font-size: 18px;
+
+  color: LightSlateGray;
+
+  text-align: center;
+
+}
+
+h1 {
+
+  font-size: 38px;
+
+  color: DarkBlue;
+
+}
+
+h2 {
+
+  color: CornflowerBlue;
+
+}
+
+h3 {
+
+  color: SkyBlue;
+
+}
+
+h4 {
+
+  color: LightSlateGray;
+
+}
