@@ -4,7 +4,7 @@ lapply(package, FUN = function(pkg) {
   if (!require(pkg, quietly=TRUE, warn.conflicts=FALSE, character.only = TRUE)){
     install.packages(pkg, dependencies = TRUE)
   }
-}) %>% invisible()
+})
 
 # check the version of R
 if (as.numeric(R.Version()$major) < 3 ||
