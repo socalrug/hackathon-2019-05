@@ -6,12 +6,16 @@ To make the most of your time, there are a number of things that you should do t
 
 1. Carefully read the [README](https://github.com/ocrug/hackathon-2019/blob/master/README.md) file for the event.
 1. OCRUG is dedicated to providing a harassment-free environment. Please read and abide by the [OCRUG Code of Conduct](https://github.com/ocrug/hackathon-2019/blob/master/code-of-conduct.md).
-1. Information for the hackathon is kept in the [hackathon-2019 GitHub repo](https://github.com/ocrug/hackathon-2019). If you do not have a GitHub account, please [create one](https://github.com/join).
-1. You will need to install **git** to *clone* the repo. For instructions on doing this on Windows, we have created a [guide](https://github.com/ocrug/hackathon-2019/blob/master/setup/git%20for%20Windows/git%20for%20Windows.pdf) or you can use [this tutorial](https://www.onlinetutorialspoint.com/git/how-to-install-git-windows-10-operating-system.html). On Windows 10 you can also install it in the Ubuntu console. For the MacOS [download the installer](https://sourceforge.net/projects/git-osx-installer/files/).
-1. Once you have git installed, you will need to clone the repo with the command: **git clone git@github.com:ocrug/hackathon-2019.git**
+1. Information for the hackathon is kept in the [hackathon-2019](https://github.com/ocrug/hackathon-2019) GitHub repo. You will need to get access to GitHub.
+    1. You will need to install *git* if you do not have it. In Windows it referred to as **GitBash**. For instructions on doing this on Windows, we have created a [guide](https://github.com/ocrug/hackathon-2019/blob/master/setup/git%20for%20Windows/git%20for%20Windows.pdf) or you can use [this tutorial](https://www.onlinetutorialspoint.com/git/how-to-install-git-windows-10-operating-system.html). On Windows 10 you can also install it in the Ubuntu console. For the MacOS [download the installer](https://sourceforge.net/projects/git-osx-installer/files/).
+    1. [Create a GitHub account](https://github.com/join), if you have one.
+    1. If you do not have a *ssh key*, you will need to [create one](https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent). Make sure you choose your OS at the top.
+    1. Your *ssh key* needs to be registered in your GitHub account. [Register the ssh key](https://help.github.com/en/enterprise/2.15/user/articles/adding-a-new-ssh-key-to-your-github-account) to your GitHub account. Make sure you choose your OS at the top. 
+    1. Go to a the terminal (on Linux/Mac) or *GitBash* in Window and clone the repo with the command: **git clone git@github.com:ocrug/hackathon-2019.git**
 1. One of the tutorials will teach you how to run RStudio on AWS. This will give you the option to use larger machines to do your work. You can also use EMR (Spark / Hadoop) with R if you wish. There will be AWS credits that should cover the costs for most people. You can set up an account and the credits can be applied retroactively to the beginning of the billing cycle (i.e. the start of the month). [Create an AWS Account and IAM user](https://github.com/ocrug/hackathon-2019/blob/master/setup/Create%20AWS%20Account%20and%20IAM%20user/Create%20an%20aws%20account%20and%20an%20IAM%20user.pdf). If you plan to use your computer then this is optional.
-1. We will be using [slack.com](https://slack.com/) during the event. If you are not on the [OCRUG Slack channel](https://ocrug.slack.com) please [sign-up](https://ocrug-slack.herokuapp.com/). 
-1. Join the **hackathon-2019** channel in slack. This is a great place to get help in getting set-up for the hackathon.
+1. We will be using [slack.com](https://slack.com/) during the event. 
+    1. If you are not on the [OCRUG Slack channel](https://ocrug.slack.com) please [sign-up](https://ocrug-slack.herokuapp.com/). 
+    1. Join the **hackathon-2019** channel in slack. This is a great place to get help in getting set-up for the hackathon.
 1. We have created the script [check_setup.r](https://github.com/ocrug/hackathon-2019/blob/master/check_setup.r). You can run to make sure that you have the basic libraries installed and updated software.
 
 ## Other Details
