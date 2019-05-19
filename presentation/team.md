@@ -5,6 +5,7 @@
 | Name | Email |
 | :--  | :--   |
 | Kevin Stachelek | kstachelek@protonmail.com |
+| Nijanth Anand | nijantha@uci.edu |
 | Pablo Barajas | barajap1@uci.edu |
 | Samira Kumar Varadharajan | samirakumar@yahoo.com |
 | Siying Liu | siyinl8@uci.edu |
