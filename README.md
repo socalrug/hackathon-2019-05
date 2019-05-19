@@ -62,9 +62,9 @@ This event is open to data scientists, enthusiasts and hackers of all levels, fr
 | 12:45 PM – 01:15 PM | Lunch                                           |
 | 01:00 PM            | Registration closes                             |
 | 01:15 PM – 01:45 PM | Welcome talk, data set overview, groups formed  |
-| 01:45 PM – 05:30 PM | Working Session                                 |
-| 05:30 PM – 06:00 PM | Dinner                                          |
-| 06:00 PM – 07:00 PM | Discussion Session                              |
+| 01:45 PM – 05:45 PM | Working Session                                 |
+| 05:45 PM – 06:30 PM | Dinner                                          |
+| 06:30 PM – 07:30 PM | Discussion Session                              |
 | 07:00 PM - 10:00 PM | Working Session                                 |
 | 10:00 PM            | Building automatically locks                    |
 
