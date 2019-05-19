@@ -2,6 +2,8 @@
 
 ## ReadytoR
 
+* GitHub: barajap1
+
 | Name | Email |
 | :--  | :--   |
 | Kevin Stachelek | kstachelek@protonmail.com |
@@ -12,6 +14,9 @@
 | William Hu | williamhu750@gmail.com |
 
 ## HydroPy
+
+* GitHub: dpwynne
+
 | Name | Email |
 | :--  | :--   |
 | Dan Hong | danhong.23@outlook.com |
@@ -21,6 +26,9 @@
 | Karthik Rao Aroor | karthikraoa@yahoo.com |
 
 ## CaptainR
+
+* GitHub: careyhuh
+
 | Name | Email |
 | :--  | :--   |
 | Carey Huh | careyhuh@gmail.com |
@@ -30,15 +38,21 @@
 | Grace Gupta | gracegupta@lclark.edu | 
 
 ## watRinspectR
+
+* GitHub: benleelewis
+
 | Name | Email |
 | :--  | :--   |
 | Benjamin Lewis | benlewisdatascience@gmail.com | 
 | Ethan Christensen | christensen.ej@gmail.com |
-| Leondra Lam | electriclam@gmail.com |
+| Leondra James | leondra.james@gmail.com |
 | Mark Dela | mark.dela@gmail.com |
 | Sarah Stewart | sarah.stew12@gmail.com |
 
 ## Pionee
+
+* GitHub: gloriagl, wanyi11
+
 | Name | Email |
 | :--  | :--   |
 | Colby Peterson | rickpetersoniot@gmail.com |
@@ -48,6 +62,9 @@
 | Wanyi Huang | wanyihuang24@gmail.com |
 
 ## Below The Mean
+
+* GitHub: phdjsep
+
 | Name | Email |
 | :--  | :--   |
 | Alex Beltyukov | beltyukov.1@gmail.com |
@@ -57,12 +74,18 @@
 | Yachen Zhu | yachenz1@uci.edu |
 
 ## A Team Has No Name
+
+* GitHub: elundgre
+
 | Name | Email |
 | :--  | :--   |
 | Anh Nguyet Vu | aenuet@gmail.com |
 | Erik Lundgren | manna.man215@gmail.com |
 
 ## Save The WoRld
+
+* GitHub: shruhi
+
 | Name | Email |
 | :--  | :--   |
 | Faizanul Syed Haque | sfhaque@uci.edu |
