@@ -62,3 +62,11 @@
 | Anh Nguyet Vu | aenuet@gmail.com |
 | Erik Lundgren | manna.man215@gmail.com |
 
+## Save The WoRld
+| Name | Email |
+| :--  | :--   |
+| Faizanul Syed Haque | sfhaque@uci.edu |
+| Gregory Faletto | gregory.faletto@marshall.usc.edu |
+| Javier Orraca | jorraca@uci.edu |
+| Sam Park | s.park0917@gmail.com |
+| Shruhi Desai | shruhid@uci.edu |
