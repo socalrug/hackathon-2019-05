@@ -9,6 +9,7 @@
 | Dwight Wynne | Cash | $10.00 |
 | Emil Hvitfeldt | AWS Credits | $50.00 |
 | Jacob Spangler | Cash | $10.00 |
+| John Peach | Cash | $10.00 |
 | Madeline Bauer | Cash | $20.00 |
 | Malcolm Barrett | AWS Credits | $50.00 |
 | Nijanth Anand | AWS Credits | $50.00 |
