@@ -8,7 +8,7 @@
 
 ## Best Visualization Award
 
-Team: CaptainR
+Team: Captain Rrrr
 
 | Name | Email |
 | :--  | :--   |

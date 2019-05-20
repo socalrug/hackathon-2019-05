@@ -25,7 +25,7 @@
 | John Shojaei | titan.550@gmail.com |
 | Karthik Rao Aroor | karthikraoa@yahoo.com |
 
-## CaptainR
+## Captain Rrrr
 
 * GitHub: careyhuh
 

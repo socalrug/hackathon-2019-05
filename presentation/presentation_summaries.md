@@ -15,7 +15,7 @@ HydroPy
 -   Predicted that in 2019, Fresno and Madera counties are not meeting their current water needs
 -   Water needs do not appear to be related to population size, probably because of agricultural water requirements
 
-Captain R
+Captain Rrrr
 ---------
 
 ### Winner: Visualization
