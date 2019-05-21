@@ -1,0 +1,312 @@
+---
+title: "Introduction to ggplot2"
+subtitle: "(and a little tidyverse)"
+author: "Jacob Spangler"
+date: "2019-05-18"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+<style type="text/css">
+.remark-slide-content {
+    font-size: 30px;
+    padding: 1em 4em 1em 4em;
+}
+</style>
+
+# Overview
+
+  - Review Plotting in R
+  
+  - What is ggplot2?
+  
+  - Examples of ggplot2
+  
+  - Exploring data
+  
+  - Conclusions
+  
+```{r, echo=F, message=F, warning=F}
+
+library(tidyverse)
+
+```
+
+---
+
+# Base R Scatterplot
+
+```{r, fig.height=5, fig.width=5}
+
+plot(x=iris$Sepal.Length,
+     y=iris$Sepal.Width)
+
+```
+
+---
+
+# Base R Histogram
+
+```{r, fig.height=5, fig.width=5}
+
+hist(x=iris$Sepal.Length)
+
+```
+
+---
+
+# Base R Boxplots
+
+```{r, fig.height=5, fig.width=5}
+
+boxplot(Sepal.Length ~ Species, data=iris)
+
+```
+
+---
+
+# What is ggplot2?
+
+**ggplot2** is a system for declaratively creating graphics, based on The Grammar of Graphics. You provide the data, tell **ggplot2** how to map variables to aesthetics, what graphical primitives to use, and it takes care of the details.
+
+---
+
+# How to install?
+
+```{r eval=F, tidy=F}
+
+# The easiest way to get ggplot2 is to install the whole tidyverse:
+install.packages("tidyverse")
+
+# Alternatively, install just ggplot2:
+install.packages("ggplot2")
+
+# Or the the development version from GitHub:
+# install.packages("devtools")
+devtools::install_github("tidyverse/ggplot2")
+
+```
+
+---
+
+# ggplot2 Scatterplots
+
+```{r, fig.height=5, fig.width=5}
+
+ggplot(iris) +
+  aes(x=Sepal.Length, y=Sepal.Width) +
+  geom_point()
+
+```
+
+---
+
+# ggplot2 Scatterplots - Diagonal Line
+
+```{r, fig.height=5, fig.width=5}
+
+ggplot(iris) +
+  aes(x=Sepal.Length, y=Sepal.Width) +
+  geom_point() +
+  geom_abline()
+
+```
+
+---
+
+# ggplot2 Scatterplots - Adding Color
+
+```{r, fig.height=5, fig.width=5}
+
+ggplot(iris) +
+  aes(x=Sepal.Length, y=Sepal.Width, color=Species) +
+  geom_point() +
+  geom_abline()
+
+```
+
+---
+
+# ggplot2 Histograms
+
+```{r, fig.height=5, fig.width=5, warning=F, message=F}
+
+ggplot(iris) + 
+  aes(x=Sepal.Length) +
+  geom_histogram()
+
+```
+
+---
+
+# ggplot2 Histograms - Bin options
+
+```{r, fig.height=5, fig.width=5}
+
+ggplot(iris) +
+  aes(x=Sepal.Length) +
+  geom_histogram(color="black", binwidth = 0.2)
+
+```
+
+---
+
+# ggplot2 Histograms - Faceting
+
+```{r, fig.height=5, fig.width=5}
+
+ggplot(iris) +
+  aes(x=Sepal.Length, fill=Species) +
+  geom_histogram(color="black", binwidth = 0.2) +
+  facet_wrap(~Species, ncol=1) +
+  theme(legend.position = "none")
+
+```
+
+---
+
+# ggplot2 Boxplots
+
+```{r, fig.height=5, fig.width=5, warning=F, message=F}
+
+ggplot(iris) + 
+  aes(x=Species, y=Sepal.Length) +
+  geom_boxplot()
+
+```
+
+---
+
+# ggplot2 Boxplots - Adding color
+
+```{r, fig.height=5, fig.width=5, warning=F, message=F}
+
+ggplot(iris) + 
+  aes(x=Species, y=Sepal.Length, color=Species) +
+  geom_boxplot()
+
+```
+
+---
+
+# ggplot2 Boxplots - Adding points
+
+```{r, fig.height=5, fig.width=5, warning=F, message=F}
+
+ggplot(iris) + 
+  aes(x=Species, y=Sepal.Length, color=Species) +
+  geom_boxplot(outlier.shape = NA) +
+  geom_point(position = position_jitter(height = 0, 
+                                        width = 0.3))
+
+```
+
+---
+
+# base R vs ggplot2 - Scatterplots
+
+.pull-left[
+
+```{r, echo=F, fig.height=5, fig.width=5}
+
+plot(x=iris$Sepal.Length,
+     y=iris$Sepal.Width)
+
+```
+
+]
+
+
+.pull-right[
+
+```{r, echo=F, fig.height=5, fig.width=5}
+
+ggplot(iris) +
+  aes(x=Sepal.Length, y=Sepal.Width) +
+  geom_point()
+
+```
+
+]
+---
+
+# DataFest Dataset
+
+```{r, echo=F}
+
+Example_Data <- read_csv("../data/raw/Public Potable Water Systems FINAL 06-22-2018_0.csv",
+                         col_types = cols())
+
+```
+
+- What about example data set?
+  - There are **`r nrow(Example_Data)`** rows
+  - There are **`r ncol(Example_Data)`** columns
+
+---
+
+# DataFest Scatterplot
+
+```{r, fig.height=5, fig.width=7, warning=F, message=F}
+
+ggplot(Example_Data) + 
+  aes(x=`Residential Population`, 
+      y=`Number of COMBINED Service Connections (CB)`) +
+  geom_point(alpha=0.4)
+
+```
+
+---
+
+# DataFest Histogram
+
+```{r, fig.height=5, fig.width=7, warning=F, message=F}
+
+ggplot(Example_Data, aes(x=`Residential Population`)) +
+  geom_histogram(color="black")
+
+```
+
+---
+
+# Conclusions
+
+- **ggplot2** has better syntax
+- **ggplot2** defaults to prettier graphs
+- **ggplot2** has lots of flexibility
+
+```{r, echo=F, fig.height=5, fig.width=6}
+
+cbPalette <- c("#999999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00",
+               "#CC79A7", "#FFFFFF")
+
+ggplot(iris) +
+  aes(x=Sepal.Length, y=Sepal.Width, color=Species) +
+  geom_point() +
+  xlab("Sepal Length") + ylab("Sepal Width") +
+  theme(axis.text = element_text(color="black", size=14),
+        plot.title = element_text(hjust=0.5, size = 16),
+        panel.border = element_rect(colour = "black", fill=NA, size=1),
+        axis.title = element_text(size=14)) +
+  ggtitle("Sepal Length vs Width in Iris data") +
+  scale_x_continuous(breaks=c(seq(4, 8, 1)), limits=c(4, 8)) +
+  scale_y_continuous(breaks=c(seq(2, 4.5, 0.5)), limits = c(2, 4.5)) +
+  scale_color_manual(values=cbPalette)
+
+```
+
+
+---
+
+# References
+
+- tidyverse: https://www.tidyverse.org/
+
+- R for Data Science: https://r4ds.had.co.nz/index.html
+
+- xaringan: https://github.com/yihui/xaringan
